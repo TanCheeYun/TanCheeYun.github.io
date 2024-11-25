@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Navigation Bar</title>
+    <style>
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #faf4d3; 
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin-right: auto;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .menu a {
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar .user-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: auto;
+            color: #000;
+            font-size: 16px;
+        }
+
+        .navbar .user-section .login {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar .order-button {
+            padding: 10px 20px;
+            background-color: #000; 
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-left: 20px;
+        }
+
+      
+        .user-icon::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">BREW</div>
+        <div class="menu">
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Location & Hours</a>
+        </div>
+        <div class="user-section">
+            <div class="login">
+                <a href="#">Log In</a>
+            </div>
+            <a href="#">Cart (0)</a>
+            <a href="#" class="order-button">Order Online</a>
+        </div>
+    </nav>
+
+</body>
+</html>

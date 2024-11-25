@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Navigation Bar 
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: transperant;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(116, 75, 9);
+
+        }
+
+        header {
+            display: flex;
+            background-color: #fff7d8;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            height: 70px
+        }
+
+        .nav-button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            text-align: center;
+            font-size: 15px;
+            margin: 20px;
+
+        }
+
+        #navbarimg {
+            cursor: pointer
+        }
+
+        button.orderonline {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            font-weight: lighter;
+            border: 1px solid black;
+            border-radius: 0px;
+            padding: 12px;
+            padding-left: 25px;
+            padding-right: 25px;
+            cursor: pointer;
+
+        }
+
+        img.user {
+            height: 20px;
+            margin-right: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="nav">
+            <div id="navbarimg"><img alt="Logo" src="image/logo1.png" height="50px" /></div>
+            <div>
+                <a href="#" class="nav-button">Shop</a>
+            </div>
+            <div>
+                <a href="#" class="nav-button">About</a>
+            </div>
+            <div>
+                <a href="#" class="nav-button">Location & Hours</a>
+            </div>
+        </div>
+
+        <div class="nav">
+            <img alt="Login" src="image/logo2.png" class="user" />
+            <div>
+                <a href="#" class="nav-button">Log In</a>
+            </div>
+            <div>
+                <a href="#" class="nav-button">Cart (0)</a>
+            </div>
+            <button class="orderonline">Order Online</button>
+        </div>
+
+
+    </header>
+
+
+</body>
+
+</html>
