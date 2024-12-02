@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>The Grand Trio Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Yeseva One", serif;
+            background-color: #260A0F;
+            color: #fff;
+        }
+
+
+        /*background*/
+
+        .Title {
+            background-image: url('images hiromi/hiromi 2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+
+        }
+
+        .Title h1 {
+            font-size: 95px;
+            margin: 100px;
+            max-width: fit-content;
+            font-family: "Yeseva One", serif;
+            color: #6A222E;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 410px;
+            margin-left: -650px;
+            position: relative;
+        }
+
+        .Title h2 {
+            font-size: 80px;
+            margin: 100px;
+            font-family: "Yeseva One", serif;
+            color: #6A222E;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+            margin-top: 230px;
+            margin-inline-end: 60px;
+            margin-right: 550px;
+            position: absolute;
+        }
+
+        .Title h3 {
+            font-size: 80px;
+            margin: 100px;
+            font-family: "Yeseva One", serif;
+            color: #6A222E;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+            margin-top: 230px;
+            margin-inline-end: 55px;
+            margin-left: 550px;
+            position: absolute;
+        }
+
+        /*paragraph*/
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            color: #6A222E;
+        }
+
+        .container p {
+            font-size: 15px;
+
+        }
+
+
+        /*image hiromi*/
+
+
+        .image {
+            background-image: url('images Hiromi/f56cffc99e2dcefe1d9999aa663d93ea\(1\)\(1\).png');
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            max-lines: fit-content;
+            
+          
+        }
+
+        .image h1 {
+            margin: 0 auto;
+            font-size: 60px;
+            max-width: fit-content;
+            font-family: "Yeseva One", serif;
+            color: #6A222E;
+            font-weight: 400;
+            margin-top: 10px;
+padding-right: 170px;
+         padding-top: 180px;
+         position:relative;
+         
+        }
+
+        .image h2 {
+            position: relative;
+            margin: 0 auto;
+            padding: 0 auto;
+            max-width:fit-content;
+            font-size: 60px;
+            font-family: "Yeseva One", serif;
+            color: #6A222E;
+            font-weight: 400;
+            
+            
+            padding-left: 320px;
+       
+        }
+
+        /*paragraph 2*/
+
+        .container2 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: px;
+            text-align: left;
+        }
+
+
+
+
+/*list*/
+.list {
+    max-width: 1200px;
+            margin: 0 auto;
+            padding: 5px;
+            text-align: left;
+
+}
+.list h1{
+    font-size: 40px;
+            font-family: "Yeseva One", serif;
+            color: #6A222E;
+            font-weight: 400;
+margin-right: 500px;
+}
+
+.timeline {
+  
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.event {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.year {
+  font-size: 27px;
+  font-weight: 400px;
+  color:#6A222E;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.event p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 150px;
+  color: #fff;
+}
+
+/*pianist*/
+.other{
+    max-width: 1200px;
+            margin: 0 auto;
+            padding: 4px;
+            text-align: left;
+            font-family: "Yeseva One", serif;
+            font-weight: 400px;
+    font-size: 30px;
+            color: #fff;
+           
+
+}
+.pianist-grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding-bottom: 60px;
+}
+
+
+.pianist-card {
+  position: relative;
+  width: 310px;
+  height: 400px;
+  
+}
+
+
+.pianist-image {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+ 
+}
+
+.pianist-name{
+    font-family: "Yeseva One", serif;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 40px;
+    margin: 0 auto;
+  bottom: 40px;
+    color: #017EC1;
+ 
+}
+
+.pianist-name2{
+    font-family: "Yeseva One", serif;
+    font-size: 40px;
+    font-weight: 400px;
+    color: #C3B26D;
+    margin-left: 60px;
+    justify-content: center;
+}
+
+
+
+.overlay {
+  position: absolute;
+top: -10px;
+  width: 100%;
+  text-align: center;
+ left: 20px;
+  padding: 200px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*footer*/
+
+        .footer {
+            background-color: #260A0F;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#pianist">Pianist</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#works">Works Showcase</a>
+                    <ul class="dropdown-long">
+                        <li><a href="#">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#sheet-music">Sheet Music Library</a>
+                    <ul class="dropdown-long">
+                        <li><a href="#">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Title About">
+        <div class="Title About Text">
+            <h1>ABOUT</h1>
+            <h2>HIROMI </h2>
+            <h3>UEHARA</h3>
+        </div>
+
+    </section>
+    <br><br><br>
+
+    <section class=" container">
+        <div class="container hiromi">
+
+            <h1>Hiromi Uehara</h1>
+            <p> is a talented Japanese jazz pianist and composer, known for her unique and creative style. Born in 1979
+                in Shizuoka, Japan, she started playing music at a young age. Hiromi blends jazz with elements of
+                classical, rock, and electronic music, creating energetic and expressive compositions. </p>
+
+            <p>
+                She is famous for her bold performances, showing both passion and control on the piano.
+                After studying at Berklee College of Music, Hiromi became known internationally, performing with famous
+                musicians and earning critical praise. Her albums, like Place to Be, Voice, Alive, and Spectrum,
+                showcase her skill with melody, harmony, and innovative sound exploration.
+            </p>
+
+        </div>
+
+    </section>
+    <br>
+
+
+    <section class="image section ">
+
+        <div class="image text">
+            <h1>HIROMI </h1>
+            <h2>UEHARA</h2>
+        </div>
+    </section>
+
+
+    <section class=" container2">
+        <div class="container hiromi2">
+
+            <h1>Hiromi </h1>
+            <p> creates solo albums and collaborates with artists from different genres, blending jazz with other
+                styles. She has teamed up with bassist Antonio Sanchez and drummer Simon Phillips in a trio, producing
+                powerful and varied music. These collaborations broaden her musical scope and add new layers to jazz.
+                Her performances are deeply emotional, engaging audiences in her music. </p>
+
+            <p>
+                Hiromi also supports music education by teaching masterclasses and giving lectures worldwide, inspiring
+                young musicians. Her style has greatly influenced pianists and composers, making her a key figure in
+                modern jazz. In both live shows and recordings, her music showcases her skill and creativity, making her
+                one of jazz's most exciting artists today.
+            </p>
+
+        </div>
+
+    </section>
+
+    <br><br>
+
+    <section class="list timeline">
+        <div class="list title">
+
+            <h1>Hiromi Uehara's career and achievements: </h1>
+            
+
+        </div>
+<div class="timeline">
+    <div class="event">
+      <span class="year">1978</span>
+      <p>Hiromi Uehara is born in Hamamatsu, Japan.</p>
+    </div>
+    <br>
+    <div class="event">     
+      <span class="year">1999</span>
+      <p>Hiromi moves to the U.S. to study at the Berklee College of Music in Boston.</p>
+    </div>
+    <br>
+    <div class="event">
+      <span class="year">2003</span>
+      <p>Hiromi releases her debut album <em>Another Mind</em> as a solo artist, gaining attention for her virtuoso piano skills and unique jazz style.</p>
+    </div>
+    <br>
+    <div class="event">
+      <span class="year">2009</span>
+      <p>Hiromi forms a trio with bassist Anthony Jackson and drummer Simon Phillips, releasing albums like <em>Beyond Standard</em> and <em>Spectacle</em>, showcasing her ability to blend jazz with other genres.</p>
+    </div>
+    <br>
+    <div class="event">
+      <span class="year">2011</span>
+      <p>Hiromi collaborates with renowned jazz musicians like Chick Corea and Stanley Clarke, further expanding her musical reach.</p>
+    </div>
+    <br>
+    <div class="event">
+      <span class="year">Now</span>
+      <p>Hiromi continues to tour globally, performing at major jazz festivals and collaborating with artists from diverse genres.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+    </section>
+
+<section class="other">
+    <div class="other pianist">
+        <h1 >Other Pianist</h1>
+        <br><br>
+        <div class="pianist-grid">
+          <div class="pianist-card">
+            <img src="images Hiromi/Animenz_ABOUT_page_photo_08e235abc7.png" alt="Animenz" class="pianist-image">
+            <div class="overlay">
+                <span class="pianist-name">ANIMENZ</span>
+              </div>
+          
+        </div>
+          
+          <div class="pianist-card">
+            <img src="images Hiromi/6d79c861ad1b98020ed0e153bafb646c.jpg" alt="Ryuichi Sakamoto" class="pianist-image">
+            <div class="overlay">
+                <span class="pianist-name2">Ryuichi Sakamoto</span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+</section>
+<br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Works Showcase</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Sheet Music Library</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Events</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+</body>
+
+</html>
