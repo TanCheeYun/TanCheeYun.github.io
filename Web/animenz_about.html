@@ -51,6 +51,15 @@
             color: #BAE7FF;
         }
 
+        header.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
         body {
             background-color: #001724;
             margin: 0;
@@ -85,14 +94,13 @@
         }
 
         .about-ptext {
-            padding-top: 100px;
-            width: 62%;
-            position: absolute;
-            left: 20%;
+            margin: 0 auto;
+            padding: 100px;
+            width: 65%;
         }
 
         p {
-            font-family: 'Zen Old Mincho', serif;
+            font-family: "Yeseva One", serif;
             font-size: 20px;
             letter-spacing: 1px;
             line-height: 1.5;
@@ -100,28 +108,31 @@
 
         .container {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             padding: 50px;
             max-width: 1200px;
             margin: 0 auto;
-            padding-top: 1850px;
+            padding-top: 100px;
         }
 
         .text-section {
             max-width: 600px;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
         }
 
         .image-section img {
-            max-width: 400px;
-            border-radius: 10px;
+            max-width: 100%;
+            display: block;
+            margin: 0;
+            margin-top: 35px;
         }
 
         .image-section {
-            position: relative;
-            left: 8%;
+            max-width: 400px;
+            flex: 1;
         }
 
         .text-section h1 {
@@ -130,7 +141,6 @@
             font-style: normal;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             font-size: 50px;
-            margin-top: 60px;
         }
 
         .text-section p::before {
@@ -138,25 +148,70 @@
             position: absolute;
             left: 0;
             line-height: 1;
-            padding-top: 6px;
+            padding-top: 5px;
         }
 
         .text-section p {
             position: relative;
             padding-left: 20px;
+            margin-top: 0;
         }
 
         .photo-container img {
-            width: auto;
-            /* 自动调整宽度 */
+            width: 100%;
             height: 100vh;
-            /* 强制高度等于屏幕高度 */
             object-fit: cover;
-            /* 确保内容填满，但可能裁剪图片两端 */
-            display: block;
+            margin-top: 20px;
+        }
+
+        .rcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1200px;
             margin: 0 auto;
-            position: absolute;
-            top: 200%;
+            margin-bottom: 100px;
+        }
+
+        .rpianist {
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .rpianist:hover {
+            transform: scale(1.05);
+            /* 鼠标悬停放大 */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .rpianist img {
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .rpianist h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .rtitle {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            padding-bottom: 50px;
+            padding-top: 50px;
         }
     </style>
 </head>
@@ -252,8 +307,58 @@
                 <p>2022 - Reached 2 million subscribers on his YouTube channel</p>
             </div>
         </div>
-
     </div>
+    <div class="rtitle">Other Pianist</div>
+    <div class="rcontainer">
+        <!-- Hiromi Uehara -->
+        <div class="rpianist">
+            <img src="images/image 22.jpg" alt="Hiromi Uehara">
+            <h3>Hiromi Uehara</h3>
+        </div>
+
+        <!-- Ryuichi Sakamoto -->
+        <div class="rpianist">
+            <img src="images Hiromi/6d79c861ad1b98020ed0e153bafb646c.jpg" alt="Ryuichi Sakamoto">
+            <h3>Ryuichi Sakamoto</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Works Showcase</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Sheet Music Library</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Events</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
 </body>
 
 </html>
