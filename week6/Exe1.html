@@ -1,154 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>
-        Responsive Navigation
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-
-    <style>
-        @media screen and (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-            }
-
-            .menu a {
-                text-align: center;
-            }
-        }
-
-        #nav {
-            padding: 5px;
-        }
-
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-
-        header {
-            padding: 15px;
-            background-color: #333333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo {
-            display: flex;
-            color: white;
-            font-size: 24px;
-            font-family: "Azeret Mono", monospace;
-            font-weight: 500;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        .info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 500;
-            gap: 30px;
-            margin: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            position: relative;
-        }
-
-
-        .contact {
-            margin-right: 20px;
-        }
-
-        .menu-about-services {
-            position: relative;
-        }
-
-
-        .submenu {
-            font-size: 15px;
-            display: none;
-            position: absolute;
-            background-color: #333333;
-            color: white;
-            min-width: 200px;
-            z-index: 1;
-            top: 100%;
-            left: 0;
-            box-sizing: border-box;
-
-        }
-
-        .submenu a {
-            min-height: 25px;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            text-align: left;
-            padding: 5px 10px;
-            color: white;
-        }
-
-        .submenu a:hover {
-            background-color: #555;
-        }
-
-        .menu-about-services:hover .submenu {
-            display: block;
-        }
-
-        img.spacing {
-            margin-left: 3px;
-        }
-    </style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Accordion</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
 </head>
 
-
 <body>
-    <header class="navbar menu">
 
-        <div id="nav">
-            <div class="logo">Logo</div>
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+            </p>
         </div>
-
-        <div class="info">
-
-            <a href="#" class="contact">Home</a>
-
-            <div class="menu-about-services about-services-container">
-                <a href="#">About</a>
-                <div class="submenu">
-                    <a href="#">Vision</a>
-                    <a href="#">Mission</a>
-
-                </div>
-            </div>
-
-            <div class="menu-about-services about-services-container">
-                <a href="#">Services</a>
-                <div class="submenu">
-                    <a href="#">Web Development</a>
-                    <a href="#">App Development</a>
-                    <a href="#">SEO Services</a>
-                </div>
-            </div>
-
-            <a href="#" class="contact">Contact</a>
+        <h3>Section 2</h3>
+        <div>
+            <p>
+                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                suscipit faucibus urna.
+            </p>
         </div>
-    </header>
+        <h3>Section 3</h3>
+        <div>
+            <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            </p>
+            <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+            </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+            <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                mauris vel est.
+            </p>
+            <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts below must be located by the end of /body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#accordion").accordion();
+            /* check here for more options: https://jqueryui.com/accordion/ */
+        });
+    </script>
+
 
 </body>
 
