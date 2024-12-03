@@ -163,6 +163,56 @@
             object-fit: cover;
             margin-top: 20px;
         }
+
+        .rcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .rpianist {
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .rpianist:hover {
+            transform: scale(1.05);
+            /* 鼠标悬停放大 */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .rpianist img {
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .rpianist h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .rtitle {
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
     </style>
 </head>
 
@@ -257,9 +307,58 @@
                 <p>2022 - Reached 2 million subscribers on his YouTube channel</p>
             </div>
         </div>
-
     </div>
+    <div class="rtitle">Other Pianist</div>
+    <div class="rcontainer">
+        <!-- Hiromi Uehara -->
+        <div class="rpianist">
+            <img src="images/image 22.jpg" alt="Hiromi Uehara">
+            <h3>Hiromi Uehara</h3>
+        </div>
 
+        <!-- Ryuichi Sakamoto -->
+        <div class="rpianist">
+            <img src="images Hiromi/6d79c861ad1b98020ed0e153bafb646c.jpg" alt="Ryuichi Sakamoto">
+            <h3>Ryuichi Sakamoto</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Works Showcase</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Sheet Music Library</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Events</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
 </body>
 
 </html>
