@@ -43,6 +43,7 @@ header.navbar {
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -216,15 +217,11 @@ body {
     border-bottom: 1px solid #333;
 }
 
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ff8200;
-}
-
 .logo-img {
-    height: 50px;
+    height: 60px;
     width: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 /*submenu*/
