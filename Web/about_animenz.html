@@ -4,7 +4,7 @@
 <head>
     <title>Animenz About Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +23,7 @@
             filter: grayscale(100%);
         }
 
-        .bgimg2 {
+        .hero-section {
             position: relative;
             width: 100%;
             height: 100vh;
@@ -31,7 +31,7 @@
             background-size: cover;
         }
 
-        .bgimg-text2 h1 {
+        .hero-text h1 {
             margin-top: -90px;
             font-family: "Yeseva One", serif;
             font-weight: 300;
@@ -41,7 +41,7 @@
             color: #BAE7FF;
         }
 
-        .bgimg-text2 h2 {
+        .hero-text h2 {
             margin-top: -90px;
             font-family: "Yeseva One", serif;
             font-weight: 300;
@@ -72,7 +72,7 @@
             flex-direction: column;
         }
 
-        .bgimg-text2 {
+        .hero-text {
             position: absolute;
             top: 90%;
             left: 34%;
@@ -93,7 +93,7 @@
             padding-right: 10px;
         }
 
-        .about-ptext {
+        .about-section-text {
             margin: 0 auto;
             padding: 100px;
             width: 65%;
@@ -101,7 +101,7 @@
 
         p {
             font-family: "Yeseva One", serif;
-            font-size: 20px;
+            font-size: 18px;
             letter-spacing: 1px;
             line-height: 1.5;
         }
@@ -164,7 +164,7 @@
             margin-top: 20px;
         }
 
-        .rcontainer {
+        .related-pianists {
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -176,20 +176,19 @@
             margin-bottom: 100px;
         }
 
-        .rpianist {
+        .pianist-card {
             flex: 1;
             max-width: 300px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .rpianist:hover {
+        .pianist-card:hover {
             transform: scale(1.05);
-            /* 鼠标悬停放大 */
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .rpianist img {
+        .pianist-card img {
             width: 300px;
             height: 350px;
             border-radius: 10px;
@@ -197,7 +196,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        .rpianist h3 {
+        .pianist-card h3 {
             margin-top: 15px;
             font-size: 20px;
             font-weight: bold;
@@ -206,7 +205,7 @@
             letter-spacing: 1.5px;
         }
 
-        .rtitle {
+        .related-section-title {
             display: flex;
             justify-content: center;
             font-size: 30px;
@@ -250,13 +249,13 @@
             </ul>
         </nav>
     </header>
-    <section class="bgimg2">
-        <div class="bgimg-text2">
+    <section class="hero-section">
+        <div class="hero-text">
             <h2 class="about-text">ABOUT</h2>
             <h1>ANIMENZ</h1>
         </div>
     </section>
-    <div class="about-ptext">
+    <div class="about-section-text">
         <p>
             <span class="special-text">Animenz</span> was born in 1991 in Germany. Classically trained pianist and
             Steinway
@@ -308,17 +307,17 @@
             </div>
         </div>
     </div>
-    <div class="rtitle">Other Pianist</div>
-    <div class="rcontainer">
+    <div class="related-section-title">Other Pianist</div>
+    <div class="related-pianists">
         <!-- Hiromi Uehara -->
-        <div class="rpianist">
+        <div class="pianist-card">
             <img src="images/image 22.jpg" alt="Hiromi Uehara">
             <h3>Hiromi Uehara</h3>
         </div>
 
         <!-- Ryuichi Sakamoto -->
-        <div class="rpianist">
-            <img src="images Hiromi/6d79c861ad1b98020ed0e153bafb646c.jpg" alt="Ryuichi Sakamoto">
+        <div class="pianist-card">
+            <img src="images/6d79c861ad1b98020ed0e153bafb646c.jpg" alt="Ryuichi Sakamoto">
             <h3>Ryuichi Sakamoto</h3>
         </div>
     </div>
