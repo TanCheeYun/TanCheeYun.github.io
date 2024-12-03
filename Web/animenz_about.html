@@ -85,10 +85,9 @@
         }
 
         .about-ptext {
-            padding-top: 100px;
-            width: 62%;
-            position: absolute;
-            left: 20%;
+            margin: 0 auto;
+            padding: 100px;
+            width: 65%;
         }
 
         p {
@@ -100,28 +99,31 @@
 
         .container {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
             padding: 50px;
             max-width: 1200px;
             margin: 0 auto;
-            padding-top: 1850px;
+            padding-top: 100px;
         }
 
         .text-section {
             max-width: 600px;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
         }
 
         .image-section img {
-            max-width: 400px;
-            border-radius: 10px;
+            max-width: 100%;
+            display: block;
+            margin: 0;
+            margin-top: 35px;
         }
 
         .image-section {
-            position: relative;
-            left: 8%;
+            max-width: 400px;
+            flex: 1;
         }
 
         .text-section h1 {
@@ -130,7 +132,6 @@
             font-style: normal;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             font-size: 50px;
-            margin-top: 60px;
         }
 
         .text-section p::before {
@@ -138,22 +139,20 @@
             position: absolute;
             left: 0;
             line-height: 1;
-            padding-top: 6px;
+            padding-top: 5px;
         }
 
         .text-section p {
             position: relative;
             padding-left: 20px;
+            margin-top: 0;
         }
 
         .photo-container img {
             width: 100%;
             height: 100vh;
             object-fit: cover;
-            display: block;
-            margin: 0 auto;
-            position: absolute;
-            top: 200%;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -252,22 +251,6 @@
 
     </div>
 
-    <body>
-        <div class="title">Other Pianist</div>
-        <div class="container">
-            <!-- Hiromi Uehara -->
-            <div class="pianist">
-                <img src="hiromi.jpg" alt="Hiromi Uehara">
-                <h3>Hiromi Uehara</h3>
-            </div>
-
-            <!-- Ryuichi Sakamoto -->
-            <div class="pianist">
-                <img src="ryuichi.jpg" alt="Ryuichi Sakamoto">
-                <h3>Ryuichi Sakamoto</h3>
-            </div>
-        </div>
-    </body>
 </body>
 
 </html>
