@@ -157,7 +157,7 @@ ul li:hover ul.dropdown-long {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('images/Home\ page.png') no-repeat center center/cover;
+    background: url('../images/Home\ page.png') no-repeat center center/cover;
     text-align: center;
 }
 

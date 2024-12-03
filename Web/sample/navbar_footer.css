@@ -200,14 +200,7 @@ ul li:hover ul.dropdown-long {
     color: rgb(255, 255, 255);
 }
 
-/*font*/
-p {
-    font-family: "Yeseva One", serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-}
-
+/*let the bar fix*/
 header.navbar {
     position: fixed;
     top: 0;
