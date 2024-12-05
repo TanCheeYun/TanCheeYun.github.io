@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animenz About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <style>
+        .image-animenz {
+            flex: 2;
+            overflow: hidden;
+        }
+
+        .image-animenz img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(100%);
+        }
+
+        .bgimg2 {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('images/animenz2.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .bgimg-text2 h1 {
+            margin-top: -90px;
+            font-family: "Yeseva One", serif;
+            font-weight: 300;
+            font-style: normal;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-size: 100px;
+            color: #BAE7FF;
+        }
+
+        .bgimg-text2 h2 {
+            margin-top: -90px;
+            font-family: "Yeseva One", serif;
+            font-weight: 300;
+            font-style: normal;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-size: 50px;
+            color: #BAE7FF;
+        }
+
+        header.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        body {
+            background-color: #001724;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .bgtext {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bgimg-text2 {
+            position: absolute;
+            top: 90%;
+            left: 34%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
+
+        .about-text {
+            padding-bottom: 45px;
+            padding-left: 10px;
+        }
+
+        .special-text {
+            font-family: "Yeseva One", serif;
+            font-size: 48px;
+            color: #BAE7FF;
+            font-weight: 300;
+            padding-right: 10px;
+        }
+
+        .about-ptext {
+            margin: 0 auto;
+            padding: 100px;
+            width: 65%;
+        }
+
+        p {
+            font-family: "Yeseva One", serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
+        .text-section {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            display: block;
+            margin: 0;
+            margin-top: 35px;
+        }
+
+        .image-section {
+            max-width: 400px;
+            flex: 1;
+        }
+
+        .text-section h1 {
+            font-family: "Yeseva One", serif;
+            font-weight: 300;
+            font-style: normal;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-size: 50px;
+        }
+
+        .text-section p::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            line-height: 1;
+            padding-top: 5px;
+        }
+
+        .text-section p {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#pianist">Pianist</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#works">Works Showcase</a>
+                    <ul class="dropdown-long">
+                        <li><a href="#">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#sheet-music">Sheet Music Library</a>
+                    <ul class="dropdown-long">
+                        <li><a href="#">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bgimg2">
+        <div class="bgimg-text2">
+            <h2 class="about-text">ABOUT</h2>
+            <h1>ANIMENZ</h1>
+        </div>
+    </section>
+    <div class="about-ptext">
+        <p>
+            <span class="special-text">Animenz</span> was born in 1991 in Germany. Classically trained pianist and
+            Steinway
+            Artist.
+            <br /> <br />
+            Animenz has won many prizes from various piano competitions in Germany, with his classical music studies
+            culminating at a music conservatory. He has gained an illustrious reputation for his arranging style, which
+            mixes classical music and Japanese anime music.
+            <br /> <br />
+            In 2010, Animenz uploaded his first piano video on YouTube, and this year marks the 13th anniversary of his
+            channel. His most popular video “unravel” has reached over 90 million views, which is phenomenal for a solo
+            piano video.
+            <br /> <br />
+            Animenz speaks four languages — German, English, Chinese, and Japanese — and boasts overwhelming support
+            from
+            anime fans around the world. He has held more than 100 live performances in more than 30 major cities,
+            including
+            those in Japan, Asia, and Europe.
+            <br /> <br />
+            Animenz moved from Germany to Japan in 2019 to broaden his perspective of Japanese anime and pop music
+            culture.
+            In 2021, he published the long-awaited Animenz Piano Sheet Music Books in cooperation with Yamaha Music
+            Media.
+        </p>
+    </div>
+    <div class="photo-container">
+        <img src="images/animenzabout2.jpg" alt="animenz about">
+    </div>
+    <div class="container">
+        <div class="image-section">
+            <img src="images/animenzabout.jpg" alt="Animenz Photo">
+        </div>
+        <div class="text-section">
+            <div>
+                <h1>Animenz's Journey</h1>
+            </div>
+            <div>
+                <p>2010 - Started his own YouTube channel</p>
+                <p>2013 - Arranged “My Dearest” — an elegant fusion of classical music and J-pop that became the
+                    foundation of all his future arrangements</p>
+                <p>2014 - Held his first Animenz Live Concert in Singapore, where he made his first public
+                    appearance
+                    onstage</p>
+                <p>2015 - Arranged “unravel” — his most popular work, boasting over 90 million views on YouTube</p>
+                <p>2019 - Registered as a Steinway Artist</p>
+                <p>2021 - Published his first piano sheet music books in cooperation with Yamaha Music Media to
+                    celebrate his 12th anniversary</p>
+                <p>2022 - Reached 2 million subscribers on his YouTube channel</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
