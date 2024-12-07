@@ -1,9 +1,15 @@
 
 /*hiromi*/
-body,html {
+body {
     margin: 0;
-    padding: 0;
+    font-family: "Yeseva One", serif;
+    background-color: #260A0F;
+    color: #fff;
 }
+
+
+/*navbar*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -144,103 +150,293 @@ ul li:hover ul.dropdown-long {
     display: block;
 }
 
+
+
+
 /*background*/
 
-.bgimg {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url('../images/Home\ page.png') no-repeat center center/cover;
-    text-align: center;
+
+
+    .Title {
+        background: url(../images/hiromi.jpg)  center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 100%;
+         height: 100vh;
+         display: flex;
+       align-items: center;
+       justify-content: center;
+     
+     }
+
+ 
+
+.titletext h1 {
+    font-size: 95px;
+    font-family: "Yeseva One", serif;
+    color: #6A222E;
+    font-weight:400;
+    letter-spacing: 1px;
+ display: flex;
+ justify-content: left;
+
+   
+  
 }
 
-.bgimg-text h1 {
-    margin-top: -90px;
+.titletext h2 {
+    font-size: 80px;
     font-family: "Yeseva One", serif;
-    font-weight: 300;
-    font-style: normal;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-size: 5em;
-    color: #ff8200;
-}
-
-/* hiromi */
-body {
-    margin: 0;
-    font-family: "Yeseva One", serif;
-    background-color: #000;
-    color: #fff;
+    color: #6A222E;
     font-weight: 400;
-}
-
-.about-section {
+    letter-spacing: 1px;
+    line-height: 1.5;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    max-width: 1800px;
-    margin: 0 auto;
-    position: relative;
-    border-top: 1px solid #ff8200;
-    /* line */
-    border-bottom: 0.5px solid #ff8200;
-    /* line */
-}
-
-.image-container {
-    flex: 2;
-    overflow: hidden;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    font-family: "Yeseva One", serif; 
-    color: #d8c68a; 
-    background: black; 
     
+  padding-left: 110px;
 }
 
-.hero-section {
-    width: 100%;
-    height: 95vh; 
-    background: url("'image/ryuchiabout.png'") no-repeat center center/cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 
-.text-container {
-    max-width: 600px;
-}
-
-.title {
-    padding-left: 5%; 
-    font-size: 150px; 
+.titletext h3{
+    font-size: 80px;
+    font-family: "Yeseva One", serif;
+    color: #6A222E;
     font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    display: flex;
+    
+
+}
+
+
+
+/*paragraph*/
+
+.container {
+    margin: 0 auto;
+    padding: 5px;
+    text-align: left;
+    width: 80%;
+}
+
+.container h1 {
+    font-size: 35px;
+    color: #6A222E;
+    font-weight: 400;
+    position:relative;
+    top: 20px;
+}
+
+.container p {
+    font-size: 15px;
+
+}
+
+
+/*image hiromi*/
+
+
+
+    .image {
+       background-image: url(../images/hiromi\ centre.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+       
+      
+    }
+
+
+.image h1 {
+    margin: 0 auto;
+    font-size: 50px;
+    max-width: fit-content;
+    font-family: "Yeseva One", serif;
+    color: #6A222E;
+    font-weight: 400;
+    position: relative;
+    top: 150px;
+    right: 110px;
+    width: 20%;
+}
+
+.image h2 {
+    
+    margin: 0 auto;
+    max-width:fit-content;
+    font-size: 50px;
+    font-family: "Yeseva One", serif;
+    color: #6A222E;
+    font-weight: 400;
+   position: relative;
+   left: 90px;
+   top:130px;
+   width: 20%;
+}
+
+/*paragraph 2*/
+
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: px;
+    text-align: left;
+}
+
+
+
+
+/*list*/
+.list {
+width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: left;
+
+}
+.list h1{
+font-size: 40px;
+    font-family: "Yeseva One", serif;
+    color: #6A222E;
+    font-weight: 400;
+margin-right: 400px;
+padding-right: 100px;
+}
+
+.timeline {
+
+margin: 50px auto;
+padding: 10px;
+margin-left: 120px;
+}
+
+.event {
+display: flex;
+align-items: flex-start;
+margin-bottom: 30px;
+}
+
+.year {
+font-size: 27px;
+font-weight: 400px;
+color:#6A222E;
+margin-right: 15px;
+}
+
+.event p {
+font-size: 20px;
+line-height: 1.5;
+margin: 0;
+padding-left: 150px;
+color: #fff;
+}
+
+/*pianist*/
+.other{
+max-width: 1200px;
+    margin: 0 auto;
+    padding: 4px;
+    text-align: left;
+    font-family: "Yeseva One", serif;
+    font-weight: 400px;
+font-size: 30px;
+    color: #fff;
+   
+
+}
+.pianist-grid {
+display: flex;
+justify-content: center;
+gap: 80px;
+padding-bottom: 60px;
+}
+
+
+.pianist-card {
+position: relative;
+width: 300px;
+height: 400px;
+
+}
+
+
+.pianist-image {
+width: 120%;
+height: 120%;
+object-fit: cover;
+
+}
+
+.pianist-name{
+font-family: "Yeseva One", serif;
+text-align: center;
+font-weight: 400px;
+font-size: 40px;
+bottom: 20px;
+right: 110px;
+color: #017EC1;
+position: relative;
+
+}
+
+.pianist-name2{
+font-family: "Yeseva One", serif;
+font-size: 40px;
+font-weight: 400px;
+color: #C3B26D;
+position: relative;
+bottom: 20px;
+right: 110px;
+}
+
+
+
+.overlay {
+position:absolute;
+top: 10px;
+padding-right:20px;
+margin-right: 100px;
+padding: 200px;
+}
+
+
+/*footer*/
+
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-section {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-weight: 300;
+    color: #ff8200;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 10px 0px;
     margin: 0;
-    line-height: 3;
 }
 
-.subtitle {
-    padding-left: 200%; 
-    font-size: 120px; 
-    font-weight: 200;
-    margin: 20px 0 0;
-    line-height: 1.2;
+.footer-section li {
+    margin: 30px 0;
 }
 
-@media (max-width: 768px) {
-    .title {
-        font-size: 2.5rem;
-    }
-    .subtitle {
-        font-size: 3rem;
-    }
-}
 .footer-contact {
     font-weight: 300;
     margin-top: 20px;
