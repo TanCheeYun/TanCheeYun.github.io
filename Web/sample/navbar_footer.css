@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: "Yeseva One", serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    border-bottom: 1px solid #333;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+/*submenu*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 -5px;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff8200;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    text-align: left;
+
+}
+
+ul li ul.dropdown {
+    width: 11%;
+    min-width: 70px;
+    background: #000000;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 0 0 0 5px;
+}
+
+
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/*submenu-long*/
+
+.dropdown-long {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 -5px;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff8200;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: left;
+    font-size: 20px;
+}
+
+ul li ul.dropdown-long li {
+    display: block;
+    text-align: center;
+
+}
+
+ul li ul.dropdown-long {
+    width: 13%;
+    min-width: 70px;
+    background: #000000;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 0 0 40px;
+}
+
+
+
+ul li:hover ul.dropdown-long {
+    display: block;
+}
+
+/*footer*/
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-section {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-weight: 300;
+    color: #ff8200;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.footer-section li {
+    margin: 30px 0;
+}
+
+.footer-contact {
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+/*let the bar fix*/
+header.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+}
