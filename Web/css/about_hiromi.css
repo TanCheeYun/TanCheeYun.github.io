@@ -1,7 +1,13 @@
 
 /*hiromi*/
-body {
+
+
+
+body, html{
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     font-family: "Yeseva One", serif;
     background-color: #260A0F;
     color: #fff;
@@ -163,51 +169,46 @@ ul li:hover ul.dropdown-long {
          background-size: cover;
          width: 100%;
          height: 100vh;
-         display: flex;
        align-items: center;
-       justify-content: center;
+       justify-content:center;
      
+    
      }
 
  
 
-.titletext h1 {
+.title {
     font-size: 95px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight:400;
     letter-spacing: 1px;
- display: flex;
- justify-content: left;
-
-   
+    padding: 10px;
+   margin: 10px;
+   padding-top: 150px;
+  padding-left: 200px;
   
 }
 
-.titletext h2 {
+
+.subtitle {
     font-size: 80px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.5;
-    display: flex;
-    
-  padding-left: 110px;
+   margin: 10px;
+     display: flex;
+     justify-content: center;
+     margin-top: 90px;
+     margin-left: 50px;
+     word-spacing: 150px;
 }
 
+ 
 
-.titletext h3{
-    font-size: 80px;
-    font-family: "Yeseva One", serif;
-    color: #6A222E;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    display: flex;
-    
 
-}
 
 
 
@@ -220,12 +221,11 @@ ul li:hover ul.dropdown-long {
     width: 80%;
 }
 
-.container h1 {
+.hightlight {
     font-size: 35px;
     color: #6A222E;
     font-weight: 400;
-    position:relative;
-    top: 20px;
+   
 }
 
 .container p {
@@ -301,21 +301,22 @@ font-size: 40px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
-margin-right: 400px;
+margin-right: 100px;
 padding-right: 100px;
+margin-left: 20px;
 }
 
 .timeline {
 
 margin: 50px auto;
 padding: 10px;
-margin-left: 120px;
+margin-left: 130px;
 }
 
 .event {
 display: flex;
 align-items: flex-start;
-margin-bottom: 30px;
+margin-bottom: 35px;
 }
 
 .year {
@@ -327,22 +328,30 @@ margin-right: 15px;
 
 .event p {
 font-size: 20px;
-line-height: 1.5;
+line-height: 1.4;
 margin: 0;
 padding-left: 150px;
 color: #fff;
 }
 
 /*pianist*/
+
+.textother{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin-bottom: 60px;
+  
+}
+
 .other{
 max-width: 1200px;
     margin: 0 auto;
     padding: 4px;
-    text-align: left;
-    font-family: "Yeseva One", serif;
-    font-weight: 400px;
-font-size: 30px;
-    color: #fff;
+    
    
 
 }
@@ -400,6 +409,8 @@ padding-right:20px;
 margin-right: 100px;
 padding: 200px;
 }
+
+
 
 
 /*footer*/
@@ -462,4 +473,17 @@ header.navbar {
     box-sizing: border-box;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width:600px) {
+    
+.title{
+    display: none;
+}
+
+
+
+
+
+
 }
