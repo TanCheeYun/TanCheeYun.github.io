@@ -289,34 +289,29 @@ ul li:hover ul.dropdown-long {
 
 
 /*list*/
-.list {
-width: 80%;
-    margin: 0 auto;
-    padding: 5px;
-    text-align: left;
 
-}
-.list h1{
-font-size: 40px;
+.listhiromi{/*hiromi字*/
+font-size: 18px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
-margin-right: 100px;
-padding-right: 100px;
-margin-left: 20px;
+    width: 50%;
+    margin-left: 270px;
+    
 }
 
-.timeline {
+.timeline {/*整个timeline表*/
 
 margin: 50px auto;
 padding: 10px;
-margin-left: 130px;
+margin-left: 260px;
+
 }
 
 .event {
 display: flex;
 align-items: flex-start;
-margin-bottom: 35px;
+margin-bottom: 50px;
 }
 
 .year {
@@ -330,8 +325,9 @@ margin-right: 15px;
 font-size: 20px;
 line-height: 1.4;
 margin: 0;
-padding-left: 150px;
+padding-left: 120px;/*数字跟字的空间*/
 color: #fff;
+width: 60%;
 }
 
 /*pianist*/
@@ -347,68 +343,49 @@ color: #fff;
   
 }
 
-.other{
-max-width: 1200px;
-    margin: 0 auto;
-    padding: 4px;
-    
-   
-
-}
-.pianist-grid {
-display: flex;
-justify-content: center;
-gap: 80px;
-padding-bottom: 60px;
-}
-
-
-.pianist-card {
-position: relative;
-width: 300px;
-height: 400px;
-
-}
-
-
-.pianist-image {
-width: 120%;
-height: 120%;
-object-fit: cover;
-
-}
-
-.pianist-name{
-font-family: "Yeseva One", serif;
-text-align: center;
-font-weight: 400px;
-font-size: 40px;
-bottom: 20px;
-right: 110px;
-color: #017EC1;
-position: relative;
-
-}
-
-.pianist-name2{
-font-family: "Yeseva One", serif;
-font-size: 40px;
-font-weight: 400px;
-color: #C3B26D;
-position: relative;
-bottom: 20px;
-right: 110px;
-}
+.pianist-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .pianist {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .pianist img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+  }
+  .pianist:hover img {
+    filter: grayscale(0%);
+  }
+  .pianist .name {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  .pianist:nth-child(1) .name {
+    color: #017EC1;
+  }
+  .pianist:nth-child(2) .name {
+    color: #C3B26D;
+  }
 
 
 
-.overlay {
-position:absolute;
-top: 10px;
-padding-right:20px;
-margin-right: 100px;
-padding: 200px;
-}
+
 
 
 
@@ -480,7 +457,70 @@ header.navbar {
 .title{
     display: none;
 }
+.subtitle{
+   margin: 0;
+   padding-top: 350px;
+   padding-left: 100px;
 
+}
+
+.container{
+    width: 90%;
+}
+
+.image{
+max-width: 1000px;
+  background-size: 90%;
+  height: 350px;
+}
+
+.image h1{
+    font-size: 45px;
+    right: 125px;
+   
+}
+
+.image h2{
+    font-size: 45px;
+    left: 50px;
+}
+
+
+
+.listhiromi{
+  font-size: 15px;
+  width: 80%;
+  padding-left: 60px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+
+.timeline{
+    margin: 0;
+    margin-left: 50px;
+   
+    align-items: center;
+}
+
+.year{
+    font-size: 20px;
+}
+
+.event p{
+    font-size: 16px;
+    padding-left:70px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+
+
+.pianist-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
 
 
 
