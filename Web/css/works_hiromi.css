@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     font-family: "Yeseva One", serif;
     background-color: #260A0F;
     color: #fff;
@@ -188,35 +188,35 @@ ul li:hover ul.dropdown-long {
 
 
 
-.title{
+.title {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/hiromi\ work2.jpg)  ;
+    background-image: url(../images/hiromi\ work2.jpg);
     background-repeat: no-repeat;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center center;
 }
-    
-.showtext{
+
+.showtext {
     font-size: 75px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-  margin: 10px;
+    margin: 10px;
 }
 
-.subtitle{
+.subtitle {
     font-size: 25px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
@@ -229,35 +229,35 @@ ul li:hover ul.dropdown-long {
 /* images */
 .imageseeker {
     flex: 1;
-   width: 250px;
+    width: 250px;
     height: 386px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 0 150px;
-    
+
 }
 
 
 
 /*content*/
 
-.work{
-   
+.work {
+
     margin: 0 auto;
-    
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+
 }
 
 
 .text-content {
     flex: 1;
     padding-left: 150px;
-   
-   
+
+
 
 }
 
@@ -265,7 +265,7 @@ ul li:hover ul.dropdown-long {
     font-size: 1.4rem;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 1px;
     padding-bottom: 5px;
 
@@ -275,17 +275,17 @@ ul li:hover ul.dropdown-long {
     font-size: 35px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    
+
 }
 
 p {
     font-size: 1rem;
     color: #fff;
     font-family: "Yeseva One", serif;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 0px;
     text-align: justify;
     margin-top: 0;
@@ -327,7 +327,7 @@ p {
 
 }
 
-.imagetom{
+.imagetom {
     flex: 1;
     width: 460px;
     height: 430px;
@@ -339,9 +339,9 @@ p {
 
 }
 
-.tom{
+.tom {
     flex: 1;
-    
+
     margin: 0 150px;
 }
 
@@ -349,11 +349,11 @@ p {
 /*spiral*/
 
 
-.contant{
+.contant {
     flex: 1;
-    width:65%;
+    width: 65%;
     margin: 0 100px;
-   padding: 20px;
+    padding: 20px;
 
 }
 
@@ -361,7 +361,7 @@ p {
     font-size: 1.4rem;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 25px;
 
@@ -371,7 +371,7 @@ p {
     font-size: 35px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 25px;
 }
@@ -380,7 +380,7 @@ p {
     font-size: 1rem;
     color: #fff;
     font-family: "Yeseva One", serif;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 0px;
     text-align: justify;
     margin-top: 0;
@@ -388,7 +388,7 @@ p {
 
 /* 让文本和图片水平居中对齐 */
 .spiral {
-   
+
     display: flex;
     align-items: center;
     margin-top: 150px;
@@ -407,7 +407,7 @@ p {
 
 /*other text*/
 
-.other{
+.other {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
@@ -421,11 +421,16 @@ p {
 /*pianistwork*/
 
 .container {
-    display: flex; /* 使用 Flexbox 布局 */
-    justify-content: center; /* 水平方向居中 */
-    align-items: flex-start; /* 垂直方向对齐到顶部 */
-    flex-wrap: wrap; /* 在小屏幕上自动换行 */
-    gap: 20px; /* 图片和内容之间的间距 */
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    justify-content: center;
+    /* 水平方向居中 */
+    align-items: flex-start;
+    /* 垂直方向对齐到顶部 */
+    flex-wrap: wrap;
+    /* 在小屏幕上自动换行 */
+    gap: 20px;
+    /* 图片和内容之间的间距 */
     padding: 30px;
     max-width: 100%;
     box-sizing: border-box;
@@ -434,16 +439,23 @@ p {
 
 
 
-.pianistwork, .ryuchi, .animenz {
+.pianistwork,
+.ryuchi,
+.animenz {
     display: flex;
-    flex-direction: column; /* 让图片和文字垂直排列 */
-    align-items: center; /* 垂直方向居中 */
-    width: 20%; /* 设置宽度 */
-   
+    flex-direction: column;
+    /* 让图片和文字垂直排列 */
+    align-items: center;
+    /* 垂直方向居中 */
+    width: 20%;
+    /* 设置宽度 */
+
 }
 
 /* 图片样式 */
-.pianist img, .merry img, .idol img{
+.pianist img,
+.merry img,
+.idol img {
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -452,8 +464,10 @@ p {
     transition: transform 0.3s ease;
 }
 
-.pianist img:hover, .merry img:hover {
-    transform: scale(1.05); /* 鼠标悬停时放大效果 */
+.pianist img:hover,
+.merry img:hover {
+    transform: scale(1.05);
+    /* 鼠标悬停时放大效果 */
 }
 
 /* 文字样式 */
@@ -463,13 +477,13 @@ p {
     margin: 10px 0;
 }
 
-.name2{
+.name2 {
     font-size: 1.2rem;
     color: #C3B26D;
     margin: 10px 0;
 }
 
-.name3{
+.name3 {
     font-size: 1.2rem;
     color: #BAE7FF;
     margin: 10px 0;
@@ -482,15 +496,17 @@ p {
 /* 星级样式 */
 .star {
     margin-top: 5px;
-   margin-right: 140px;
+    margin-right: 140px;
 }
 
 .star img {
-    width: 20px; /* 调整星星大小 */
-    margin: 0px; /* 星星之间的间距 */
+    width: 20px;
+    /* 调整星星大小 */
+    margin: 0px;
+    /* 星星之间的间距 */
 }
 
-.star2{
+.star2 {
     margin-top: 5px;
     margin-right: 140px;
 }
@@ -566,216 +582,209 @@ header.navbar {
 
 
 @media screen and (max-width:600px) {
-    
-/*burger menu*/    
-.burger-menu {
-    display: flex;
+
+    /*burger menu*/
+    .burger-menu {
+        display: flex;
+    }
+
+    .navbar nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 0;
+    }
+
+
+    .title {
+        width: 100%;
+        background-position: 70% 70%;
+
+    }
+
+    .showtext {
+        font-size: 60px;
+        margin-bottom: 150px;
+        word-spacing: 150px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        margin: 0 100px;
+        align-items: center;
+
+
+    }
+
+
+    /*Seeker*/
+
+    .worktext1 {
+        flex-direction: column;
+
+    }
+
+    .album {
+        font-size: 1.4rem;
+    }
+
+    .Seeker {
+        font-size: 25px;
+    }
+
+    .p {
+        font-size: 12px;
+    }
+
+    .imageseeker {
+        width: 300px;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    .text-content {
+        flex-direction: column;
+
+        padding: 0;
+        margin: 80px;
+        margin-top: 50px;
+    }
+
+    /*anthermind*/
+
+    .anthermind {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+
+    .imagetom {
+        width: 320px;
+    }
+
+    .album-tom {
+        font-size: 1.3rem;
+        font-weight: 400px;
+    }
+
+    .tomjerry {
+        font-size: 18px;
+    }
+
+    .tom p {
+        font-size: 15px;
+
+    }
+
+    .tom {
+        width: 300px;
+        align-items: center;
+        margin: 70px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Spiral*/
+
+    .imagelaby {
+        width: 300px;
+        height: 320px;
+        align-items: center;
+        margin: 0px;
+
+
+    }
+
+    .spiral {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .album-spiral {
+        font-size: 1.3rem;
+    }
+
+    .laby {
+        font-size: 18px;
+    }
+
+    .spiral p {
+        font-size: 15px;
+    }
+
+    .contant {
+        margin: 40px;
+    }
+
+    /*other*/
+
+    .other {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+
+    /*pianistwork*/
+
+    .container {}
+
+    .pianist img,
+    .merry img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pianistwork,
+    .ryuchi {
+        width: 40%;
+
+    }
+
+    .idol img,
+    .name3,
+    .star2 {
+
+        display: none;
+
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .star {
+
+        margin-right: 50px;
+    }
+
+
+
 }
-.navbar nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    padding: 10px 0;
-}
-.navbar nav.active {
-    display: flex;
-}
-.navbar nav ul {
-    flex-direction: column;
-    text-align: center;
-}
-.navbar nav ul li {
-    margin: 10px 0;
-}
-
-
-.title{
-    width: 100%;
-    background-position: 70% 70%;
-    
-}
-
-.showtext{
-    font-size: 60px;
-   margin-bottom: 150px;
-   word-spacing: 150px;
-}
-
-.subtitle{
-    font-size: 30px;
-    margin:  0 100px;
-    align-items:  center;
-   
-
-}
-
-
-/*Seeker*/
-
-.worktext1{
-    flex-direction: column;
-    
-}
-
-.album{
-    font-size: 1.4rem;
-}
-
-.Seeker{
-    font-size: 25px;
-}
-
-.p{
-    font-size: 12px;
-}
-
-.imageseeker {
-    width: 300px;
-    align-items: center;
-   margin:0;
-
-}
-
-.text-content {
-   flex-direction: column;
-   
-   padding: 0;
-   margin: 80px; 
-    margin-top: 50px;
-}
-
-/*anthermind*/
-
-.anthermind{
-    flex-direction: column;
-    flex-direction: column-reverse;
-}
-
-
-.imagetom{
-width: 320px;
-}
-
-.album-tom{
-    font-size: 1.3rem;
-    font-weight: 400px;
-}
-
-.tomjerry{
-    font-size: 18px;
-}
-
-.tom p{
-    font-size: 15px;
-    
-}
-
-.tom{
-    width: 300px;
-    align-items: center;
-   margin:70px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*Spiral*/
-
-.imagelaby{
-    width: 300px;
-    height: 320px;
-    align-items: center;
-    margin: 0px;
-  
-
-}
-
-.spiral{
-    flex-direction: column;
-    margin-top: 70px;
-}
-
-.album-spiral{
-    font-size: 1.3rem;
-}
-
-.laby{
-    font-size: 18px;
-}
-
-.spiral p{
-    font-size: 15px;
-}
-
-.contant{
-    margin: 40px;
-}
-
-/*other*/
-
-.other{
-font-size: 30px;
-margin: 10px;
-}
-
-
-/*pianistwork*/
-
-
-
-
-.pianist img, .merry img{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.pianistwork,.ryuchi{
-width: 40%;
-
-}
-
-.idol img,.name3,.star2{
-    
-    display: none ;
-
-}
-
-.name{
-    font-size: 20px;
-}
-
-.star{
-    
-   margin-right: 50px;
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
