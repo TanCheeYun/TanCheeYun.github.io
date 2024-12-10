@@ -48,6 +48,55 @@
         </nav>
     </header>
 
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li>
+                    <a href="#pianist">Pianist</a>
+                    <ul class="dropdown">
+                        <li><a href="http://127.0.0.1:5500/Web/about_hiromi.html">Hitomi</a></li>
+                        <li><a href="http://127.0.0.1:5500/Web/web/about_ryuchi.html">Ryuchi</a></li>
+                        <li><a href="http://127.0.0.1:5500/Web/about_animenz.html">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#works">Works Showcase</a>
+                    <ul class="dropdown-long">
+                        <li><a href="http://127.0.0.1:5500/Web/workshowcasehiromi.html">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#sheet-music">Sheet Music Library</a>
+                    <ul class="dropdown-long">
+                        <li><a href="#">Hitomi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const navMenu = document.getElementById('nav-menu');
+    
+        burgerMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
     <section class="Title">
         <div class="Title-container">
             <h1 class="title">ABOUT</h1>
