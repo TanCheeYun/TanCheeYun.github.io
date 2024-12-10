@@ -1,9 +1,8 @@
-
 /*hiromi*/
 
 
 
-body, html{
+body{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -158,36 +157,60 @@ ul li:hover ul.dropdown-long {
 
 
 
+/*burger menu*/
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+
+.burger-menu span {
+    display: block;
+    height: 4px;
+    background-color: #ff8200;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.navbar nav {
+    display: flex;
+}
+
+
+
 
 /*background*/
 
 
 
-    .Title {
-        background: url(../images/hiromi.jpg)  center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         width: 100%;
-         height: 100vh;
-       align-items: center;
-       justify-content:center;
-     
+.Title {
+    background: url(../images/hiromi.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
     
-     }
+}
 
- 
+
 
 .title {
     font-size: 95px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight:400;
+    font-weight: 400;
     letter-spacing: 1px;
     padding: 10px;
-   margin: 10px;
-   padding-top: 150px;
-  padding-left: 200px;
-  
+    margin: 10px;
+    padding-top: 150px;
+    padding-left: 200px;
+
 }
 
 
@@ -198,15 +221,15 @@ ul li:hover ul.dropdown-long {
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.5;
-   margin: 10px;
-     display: flex;
-     justify-content: center;
-     margin-top: 90px;
-     margin-left: 50px;
-     word-spacing: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 50px;
+    word-spacing: 150px;
 }
 
- 
+
 
 
 
@@ -225,7 +248,7 @@ ul li:hover ul.dropdown-long {
     font-size: 35px;
     color: #6A222E;
     font-weight: 400;
-   
+
 }
 
 .container p {
@@ -238,15 +261,15 @@ ul li:hover ul.dropdown-long {
 
 
 
-    .image {
-       background-image: url(../images/hiromi\ centre.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 400px;
-        width: 100%;
-       
-      
-    }
+.image {
+    background-image: url(../images/hiromi\ centre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+
+
+}
 
 
 .image h1 {
@@ -263,17 +286,17 @@ ul li:hover ul.dropdown-long {
 }
 
 .image h2 {
-    
+
     margin: 0 auto;
-    max-width:fit-content;
+    max-width: fit-content;
     font-size: 50px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
-   position: relative;
-   left: 90px;
-   top:130px;
-   width: 20%;
+    position: relative;
+    left: 90px;
+    top: 130px;
+    width: 20%;
 }
 
 /*paragraph 2*/
@@ -290,49 +313,52 @@ ul li:hover ul.dropdown-long {
 
 /*list*/
 
-.listhiromi{/*hiromi字*/
-font-size: 18px;
+.listhiromi {
+    /*hiromi字*/
+    font-size: 18px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
     width: 50%;
     margin-left: 270px;
-    
+
 }
 
-.timeline {/*整个timeline表*/
+.timeline {
+    /*整个timeline表*/
 
-margin: 50px auto;
-padding: 10px;
-margin-left: 260px;
+    margin: 50px auto;
+    padding: 10px;
+    margin-left: 260px;
 
 }
 
 .event {
-display: flex;
-align-items: flex-start;
-margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
 }
 
 .year {
-font-size: 27px;
-font-weight: 400px;
-color:#6A222E;
-margin-right: 15px;
+    font-size: 27px;
+    font-weight: 400px;
+    color: #6A222E;
+    margin-right: 15px;
 }
 
 .event p {
-font-size: 20px;
-line-height: 1.4;
-margin: 0;
-padding-left: 120px;/*数字跟字的空间*/
-color: #fff;
-width: 60%;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+    padding-left: 120px;
+    /*数字跟字的空间*/
+    color: #fff;
+    width: 60%;
 }
 
 /*pianist*/
 
-.textother{
+.textother {
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
@@ -340,32 +366,36 @@ width: 60%;
     font-size: 3.5rem;
     font-weight: 100;
     margin-bottom: 60px;
-  
+
 }
 
 .pianist-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-  }
-  .pianist {
+}
+
+.pianist {
     position: relative;
     width: 300px;
     height: 300px;
     overflow: hidden;
     border-radius: 15px;
-  }
-  .pianist img {
+}
+
+.pianist img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: grayscale(100%);
     transition: filter 0.5s ease;
-  }
-  .pianist:hover img {
+}
+
+.pianist:hover img {
     filter: grayscale(0%);
-  }
-  .pianist .name {
+}
+
+.pianist .name {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -374,14 +404,15 @@ width: 60%;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 2px 2px 5px #000;
-  }
-  
-  .pianist:nth-child(1) .name {
+}
+
+.pianist:nth-child(1) .name {
     color: #017EC1;
-  }
-  .pianist:nth-child(2) .name {
+}
+
+.pianist:nth-child(2) .name {
     color: #C3B26D;
-  }
+}
 
 
 
@@ -453,74 +484,109 @@ header.navbar {
 }
 
 @media screen and (max-width:600px) {
-    
-.title{
-    display: none;
-}
-.subtitle{
-   margin: 0;
-   padding-top: 350px;
-   padding-left: 100px;
-
-}
-
-.container{
-    width: 90%;
-}
-
-.image{
-max-width: 1000px;
-  background-size: 90%;
-  height: 350px;
-}
-
-.image h1{
-    font-size: 45px;
-    right: 125px;
-   
-}
-
-.image h2{
-    font-size: 45px;
-    left: 50px;
-}
 
 
+    /*burger menu*/
+    .burger-menu {
+        display: flex;
+    }
 
-.listhiromi{
-  font-size: 15px;
-  width: 80%;
-  padding-left: 60px;
-  margin: 0;
-  padding-bottom: 30px;
-}
+    .navbar nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 0;
+    }
 
 
-.timeline{
-    margin: 0;
-    margin-left: 50px;
-   
-    align-items: center;
-}
-
-.year{
-    font-size: 20px;
-}
-
-.event p{
-    font-size: 16px;
-    padding-left:70px;
-    margin-bottom: 40px;
-    margin-right: 50px;
-}
 
 
-.pianist-container{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    
-}
+
+    .title {
+        display: none;
+    }
+
+    .subtitle {
+        margin: 0;
+        padding-top: 350px;
+        padding-left: 100px;
+
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .image {
+        max-width: 1000px;
+        background-size: 90%;
+        height: 350px;
+    }
+
+    .image h1 {
+        font-size: 45px;
+        right: 125px;
+
+    }
+
+    .image h2 {
+        font-size: 45px;
+        left: 50px;
+    }
+
+
+
+    .listhiromi {
+        font-size: 15px;
+        width: 80%;
+        padding-left: 60px;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+
+    .timeline {
+        margin: 0;
+        margin-left: 50px;
+
+        align-items: center;
+    }
+
+    .year {
+        font-size: 20px;
+    }
+
+    .event p {
+        font-size: 16px;
+        padding-left: 70px;
+        margin-bottom: 40px;
+        margin-right: 50px;
+    }
+
+
+    .pianist-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+    }
 
 
 
