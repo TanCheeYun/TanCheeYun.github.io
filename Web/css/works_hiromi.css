@@ -91,6 +91,8 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
+
+
 /*submenu-long*/
 
 .dropdown-long {
@@ -152,6 +154,34 @@ ul li ul.dropdown-long {
 ul li:hover ul.dropdown-long {
     display: block;
 }
+
+
+
+/*burger menu*/
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+
+.burger-menu span {
+    display: block;
+    height: 4px;
+    background-color: #ff8200;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.navbar nav {
+    display: flex;
+}
+
+
+
 
 /*page*/
 
@@ -537,8 +567,29 @@ header.navbar {
 
 @media screen and (max-width:600px) {
     
-body{
- 
+/*burger menu*/    
+.burger-menu {
+    display: flex;
+}
+.navbar nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 10px 0;
+}
+.navbar nav.active {
+    display: flex;
+}
+.navbar nav ul {
+    flex-direction: column;
+    text-align: center;
+}
+.navbar nav ul li {
+    margin: 10px 0;
 }
 
 
