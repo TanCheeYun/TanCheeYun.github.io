@@ -153,6 +153,32 @@ ul li:hover ul.dropdown-long {
   display: block;
 }
 
+
+
+/*burger menu*/
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin: 10px 20px;
+}
+
+.burger-menu span {
+  display: block;
+  height: 4px;
+  background-color: #ff8200;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.navbar nav {
+  display: flex;
+}
+
+
 /* ryuchi */
 .hero-section {
     width: 100%;
@@ -226,7 +252,7 @@ p {
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
-    .title {
+    .title-ryuchi {
         font-size: 2.5rem;
     }
     .subtitle {
@@ -425,4 +451,109 @@ p {
   margin-top: 20px;
   font-size: 12px;
   color: rgb(255, 255, 255);
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+  .hero-section {
+      height: 60vh;
+  }
+
+  .hero-text h1 {
+      font-size: 40px;
+      margin-top: 0;
+  }
+
+  .hero-text h2 {
+      font-size: 25px;
+      margin-top: 10px;
+  }
+
+  .content-section {
+      gap: 30px;
+      padding: 20px 10px;
+  }
+
+  .content-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .content-item img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 20px;
+  }
+
+  .one {
+      max-width: 100%;
+  }
+
+  .content-item h3 {
+      font-size: 30px;
+      line-height: 1.4;
+  }
+
+  .content-item h4 {
+      font-size: 18px;
+      margin-top: 10px;
+  }
+
+  .content-item.reverse {
+      flex-direction: column;
+  }
+
+  .hero-text {
+      position: absolute;
+      top: 85%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+  }
+
+  .about-text {
+      padding: 0;
+      margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+      height: 50vh;
+  }
+
+  .hero-text h1 {
+      font-size: 30px;
+  }
+
+  .hero-text h2 {
+      font-size: 18px;
+  }
+
+  .content-item img {
+      width: 250px;
+      height: 250px;
+  }
+
+  .content-item h3 {
+      font-size: 24px;
+  }
+
+  .content-item h4 {
+      font-size: 16px;
+  }
+
+  .hero-text {
+      position: absolute;
+      top: 85%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+  }
+
+  .about-text {
+      padding: 0;
+      margin: 0;
+  }
 }
