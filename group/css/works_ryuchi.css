@@ -1,0 +1,58 @@
+/*ryuchi*/
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Yeseva One", serif;
+    color: #C3B26D; 
+    background: black; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.work-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .work-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .work-item.left {
+    flex-direction: row;
+  }
+  
+  .work-item.right {
+    flex-direction: row-reverse;
+  }
+  
+  .work-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  
+  .work-content {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .work-content h3 {
+    font-size: 1.2rem;
+    color: #C3B26D;
+  }
+  
+  .work-content h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  
+  .work-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #bbb;
+  }
