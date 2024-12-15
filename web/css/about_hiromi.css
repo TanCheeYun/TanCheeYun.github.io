@@ -2,6 +2,7 @@
 
 
 
+
 body{
     margin: 0;
     padding: 0;
@@ -27,33 +28,38 @@ body{
     width: 100%;
     height: 100vh;
     align-items: center;
-    justify-content: center;
-    display: flex;
    
+
 }
 
 
 
-.title {
+.title  {
     font-size: 95px;
-    font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
-    padding:0 px;
-    
+    display: flex;
+    justify-content:left;
+    margin: 0px;
+    padding:0px ;
+    padding-left: 160px;
+    padding-top: 130px;
 }
 
 
 .subtitle {
     font-size: 80px;
-    font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.5;
-    word-spacing: 150px;
-    padding: 50px;
+    word-spacing: 130px;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-left: 30px;
+    margin: 0px;
 }
 
 
@@ -69,6 +75,7 @@ body{
     padding: 5px;
     text-align: left;
     width: 80%;
+    max-width: 1200px;
 }
 
 .hightlight {
@@ -93,6 +100,8 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
+    max-width: 100%;
+    
     width: 100%;
 
 
@@ -153,8 +162,10 @@ body{
 
 .timeline {
     /*整个timeline表*/
-
-    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
     padding: 10px;
     margin-left: 260px;
 
@@ -256,34 +267,42 @@ body{
     
 
 
+.title{
+    display: flex;
+    font-size: 60px;
+   justify-content: center;
+  padding:30px;
+   padding-left: 0px;
+    padding-top: 100px;
+   
+}
 
 
-
-    .title {
-       display: flex;
-       
-    }
 
     .subtitle {
+        font-size: 50px;
         margin: 0;
-        padding-top: 350px;
-        padding-left: 100px;
+       padding:95px;
+       display: flex;
+        justify-content:right;       
+      padding-top: 150px;
 
     }
 
     .container {
-        width: 90%;
+        width: 80%;
     }
 
     .image {
-        max-width: 1000px;
+        max-width: 100%;
         background-size: 90%;
         height: 350px;
     }
 
     .image h1 {
         font-size: 45px;
-        right: 125px;
+      left: 50px;
+        margin: 0;
 
     }
 
@@ -306,20 +325,23 @@ body{
     .timeline {
         margin: 0;
         margin-left: 50px;
-
+        width: 90%;
         align-items: center;
+      
     }
 
     .year {
         font-size: 20px;
     }
 
+    
+
     .event p {
         font-size: 16px;
         padding-left: 70px;
         margin-bottom: 40px;
         margin-right: 50px;
-       
+       padding: 0px;
     }
 
 
@@ -330,8 +352,32 @@ body{
        
     }
 
+    .footer-section h3 {
+        
+        font-size: 12px;
+       
+    }
+    
+.footer-contact h3{
+font-size: 15px;
+}
 
+.footer-contact {
+    font-size: 10px;
+}
 
-
+.footer-contact h3 {
+    
+    margin-top: 20px;
+    
+    font-size: 10px;
 
 }
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+}
+

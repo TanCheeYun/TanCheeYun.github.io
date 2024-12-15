@@ -146,9 +146,7 @@ ul li:hover ul.dropdown-long {
 
 /*burger menu*/
 
-.mobile{
-    display: none;
-}
+
 
 .burger-menu {
     display: none;
@@ -244,4 +242,29 @@ p {
     color: rgb(255, 255, 255);
 }
 
-
+@media screen and (max-width=600px) {
+    burger menu/    
+.burger-menu {
+    display: flex;
+}
+.navbar nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 10px 0;
+}
+.navbar nav.active {
+    display: flex;
+}
+.navbar nav ul {
+    flex-direction: column;
+    text-align: center;
+}
+.navbar nav ul li {
+    margin: 10px 0;
+}
+}
