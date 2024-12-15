@@ -23,12 +23,13 @@ body{
 .Title {
     background: url(../images/hiromi.jpg) center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    
+    display: flex;
+   
 }
 
 
@@ -39,11 +40,8 @@ body{
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
-    padding: 10px;
-    margin: 10px;
-    padding-top: 150px;
-    padding-left: 200px;
-
+    padding:0 px;
+    
 }
 
 
@@ -54,12 +52,8 @@ body{
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.5;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    margin-top: 90px;
-    margin-left: 50px;
     word-spacing: 150px;
+    padding: 50px;
 }
 
 
@@ -266,7 +260,8 @@ body{
 
 
     .title {
-        display: none;
+       display: flex;
+       
     }
 
     .subtitle {
@@ -324,6 +319,7 @@ body{
         padding-left: 70px;
         margin-bottom: 40px;
         margin-right: 50px;
+       
     }
 
 
@@ -331,7 +327,7 @@ body{
         display: flex;
         justify-content: center;
         gap: 20px;
-
+       
     }
 
 
