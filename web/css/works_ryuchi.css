@@ -24,19 +24,25 @@ body, html {
 .title-ryuchi {
   font-size: 7rem; /* Adjust size for ABOUT */
   font-weight: 100;
-  margin: 0;
+  margin: 30px;
   line-height: 1;
+  display: flex;
+  justify-content:left;
+  padding:20px ;
+  padding-left: 600px;
+  padding-top: 20px;
   color: #C3B26D;
-  padding:50px;
+  
 }
 
 /* Subtitle Styling */
 .subtitle {
-  font-size: 5.5rem; /* Bigger for the name */
+  font-size: 6rem; /* Bigger for the name */
   font-weight: 100;
-  margin: 30px 0 0;
+  margin: 30px ;
   line-height: 1.2;
   padding: 20px;
+  padding-left: 700px;
 
 }
 .work-section {
@@ -158,4 +164,7 @@ body, html {
   .hero-section {
       height: 60vh;
   }
+
 }
+
+ 
