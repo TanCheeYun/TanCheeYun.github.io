@@ -200,6 +200,32 @@ ul li:hover ul.dropdown-long {
     ul li:focus-within ul.dropdown-long {
         display: block;
     }
+       
+    .footer {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    
+    .footer-section {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+    
+    .social-icons img {
+        width: 30px; 
+    }
+    .footer-section h3 {
+        font-size: 1.3rem; 
+    }
+
+    .footer-section ul {
+        font-size: 0.9rem; 
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem; 
+    }
+
 
 }
 
