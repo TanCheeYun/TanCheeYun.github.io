@@ -157,21 +157,69 @@ body, html {
 }
 
 
-  /*mobile*/
 @media (max-width: 768px) {
   .hero-section {
-      height: 60vh;
+      height: 60vh; 
+      justify-content: center; 
+      text-align: center;
   }
 
   .title-ryuchi {
-    font-size: 4em;
+      font-size: 3rem; 
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .subtitle {
+      font-size: 2rem; 
+      margin: 10px auto;
+      padding: 10px;
+      text-align: center;
+  }
+
+  /* Work Section */
+  .work-section {
+      padding: 10px; 
+  }
+
+  .work-item {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .work-image img {
+    display: none; 
 }
 
-.subtitle {
-    font-size: 3rem;
-    margin-left: 10%;
-}
+  .work-content {
+      padding: 10px;
+  }
 
+  .work-content h2 {
+      font-size: 1.5rem; 
+  }
+
+  .work-content p {
+      font-size: 0.9rem; 
+  }
+
+  /* Pianist Section */
+  .pianist-container {
+      gap: 20px; 
+      margin-bottom: 50px;
+  }
+
+  .pianist {
+      width: 90%; 
+      height: auto; 
+      border-radius: 10px;
+  }
+
+  .pianist:nth-child(1) .name,
+  .pianist:nth-child(2) .name {
+      bottom: 30px; 
+  }
 }
 
  
