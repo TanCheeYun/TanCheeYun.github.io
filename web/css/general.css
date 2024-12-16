@@ -175,7 +175,7 @@ ul li:hover ul.dropdown-long {
 
 p {
     font-family: "Yeseva One", serif;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 1px;
     line-height: 1.5;
 }
@@ -267,4 +267,6 @@ p {
 .navbar nav ul li {
     margin: 10px 0;
 }
+
+
 }

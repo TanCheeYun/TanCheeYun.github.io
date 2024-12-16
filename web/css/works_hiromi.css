@@ -87,7 +87,7 @@ body {
 
 .text-content {
     flex: 1;
-    padding-left: 150px;
+    padding: 15px;
 
 
 
@@ -95,7 +95,7 @@ body {
 
 .album {
     font-size: 1.4rem;
-    font-family: "Yeseva One", serif;
+    
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
@@ -105,7 +105,7 @@ body {
 
 .Seeker {
     font-size: 35px;
-    font-family: "Yeseva One", serif;
+    
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
