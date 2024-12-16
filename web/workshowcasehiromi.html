@@ -63,17 +63,6 @@
 
 
 
-    <script>
-        const burgerMenu = document.getElementById('burger-menu');
-        const navMenu = document.getElementById('nav-menu');
-
-        burgerMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
-
-
-
     <section class="title">
         <div class="titlecontainer">
             <h1 class="showtext">Work Showcase</h1>
@@ -245,7 +234,14 @@
         </div>
     </footer>
 
+    <script>// 获取 burger-menu 和 nav 元素
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
 
+        // 点击 burger-menu 时，切换菜单的显示
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active'); // 切换 'active' 类来显示或隐藏菜单
+        });</script>
 
 
 </body>

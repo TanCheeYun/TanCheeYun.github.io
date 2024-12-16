@@ -1,3 +1,7 @@
+body {
+    background-color: aqua;
+}
+
 .image-animenz {
     flex: 2;
     overflow: hidden;
