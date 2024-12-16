@@ -1,6 +1,6 @@
 /*hiromi*/
 body {
-    background-color: #6A222E;
+    background-color: #260A0F;
 }
 
 
@@ -133,7 +133,7 @@ p {
 
 .tom {
     flex: 1;
-    padding: 50px;
+    padding: 0px;
     
 }
 
@@ -386,8 +386,8 @@ p {
         font-size: 25px;
     }
 
-    .p {
-        font-size: 1px;
+    .text-content p {
+        font-size: 15px;
     }
 
     .imageseeker {
@@ -518,5 +518,136 @@ p {
 
 }
 @media (max-width: 480px) {
-   
+       
+.all{
+    padding-top: 60px;
+}
+
+    .title {
+        width: 100%;
+        background-position: 70% 70%;
+        height:100vh ;
+    }
+
+    .showtext {
+        font-size: 60px;
+      display: flex;
+        margin-bottom: 100px;
+       padding-bottom: 30px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        margin: 0 100px;
+        align-items: center;
+
+
+    }
+
+
+
+
+
+    /*Seeker*/
+
+    .worktext1 {
+        flex-direction: column;
+        width:100%;
+        padding: 0px;
+    }
+
+    .album {
+        font-size: 1.3rem;
+    }
+
+    .Seeker {
+        font-size: 25px;
+    }
+
+    .text-content p {
+        font-size: 10px;
+    }
+
+    .imageseeker {
+        width:70%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-content {
+       width: 100%;
+       padding: 20px;
+    }
+
+    /*anthermind*/
+
+    .anthermind {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 50px;
+    }
+
+
+    .imagetom {
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .album-tom {
+        font-size: 1.3rem;
+        
+    }
+
+    .tomjerry {
+        font-size: 18px;
+    }
+
+    .tom p {
+        font-size: 15px;
+
+    }
+
+    .tom {
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    /*Spiral*/
+
+    .imagelaby {
+        width:100%;
+        align-items: center;
+        margin: 0px;
+        padding: 0;
+
+    }
+
+    .spiral {
+        flex-direction: column;
+        margin: 0;
+        padding: 60px;
+       
+    }
+
+    .album-spiral {
+        font-size: 1.3rem;
+    }
+
+    .laby {
+        font-size: 18px;
+    }
+
+    .spiral p {
+        font-size: 15px;
+    }
+
+    .contant {
+        width: 100%;
+        align-items: center;
+    }
+
   }
