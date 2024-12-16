@@ -1,12 +1,6 @@
 /*hiromi*/
 body {
-    margin: 0;
-    padding: 0;
-    
-    font-family: "Yeseva One", serif;
     background-color: #6A222E;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -76,7 +70,7 @@ body {
    
     margin: 0 ;
     padding: 50px;
-    width: 35%;
+    width: 30%;
 }
 
 
@@ -163,7 +157,7 @@ p {
 
 .imagetom {
     flex: 0;
-    width: 40%;
+    width: 35%;
     margin: 0 ;
     padding: 50px;
     
@@ -185,7 +179,7 @@ p {
 .imagelaby {
     margin: 0 ;
     padding: 50px;
-    width: 40%;
+    width: 35%;
     
 }
 
@@ -347,7 +341,9 @@ p {
 @media  (max-width:768px) {
 
     
-
+.all{
+    padding-top: 60px;
+}
 
     .title {
         width: 100%;
@@ -391,7 +387,7 @@ p {
     }
 
     .p {
-        font-size: 12px;
+        font-size: 1px;
     }
 
     .imageseeker {
@@ -403,6 +399,7 @@ p {
 
     .text-content {
        width: 70%;
+       padding: 50px;
     }
 
     /*anthermind*/
