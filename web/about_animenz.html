@@ -4,7 +4,8 @@
 <head>
     <title>Animenz About Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/about_animenz.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/about_animenz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,9 +16,15 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <a href="../index.html">
-                <img src="../images/logo.png" alt="Logo" class="logo-img">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
             </a>
+        </div>
+        <!-- 添加 Burger Menu -->
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <nav>
             <ul>
@@ -29,14 +36,16 @@
                         <li><a href="about_animenz.html">Animenz</a></li>
                     </ul>
                 </li>
-                <li><a href="#works">Works Showcase</a>
+                <li>
+                    <a href="#works">Works Showcase</a>
                     <ul class="dropdown-long">
                         <li><a href="workshowcasehiromi.html">Hiromi</a></li>
                         <li><a href="#">Ryuchi</a></li>
                         <li><a href="workshowcaseanimenz.html">Animenz</a></li>
                     </ul>
                 </li>
-                <li><a href="#sheet-music">Sheet Music Library</a>
+                <li>
+                    <a href="#sheet-music">Sheet Music Library</a>
                     <ul class="dropdown-long">
                         <li><a href="#">Hiromi</a></li>
                         <li><a href="#">Ryuchi</a></li>
@@ -81,11 +90,11 @@
         </p>
     </div>
     <div class="photo-container">
-        <img src="../images/animenzabout2.jpg" alt="animenz about">
+        <img src="images/animenzabout2.jpg" alt="animenz about">
     </div>
     <div class="container">
         <div class="image-section">
-            <img src="../images/animenzabout.jpg" alt="Animenz Photo">
+            <img src="images/animenzabout.jpg" alt="Animenz Photo">
         </div>
         <div class="text-section">
             <div>
@@ -110,13 +119,13 @@
     <div class="related-pianists">
         <!-- Hiromi Uehara -->
         <div class="pianist-card">
-            <img src="../images/other_hiromi.jpg" alt="Hiromi Uehara">
+            <img src="images/other_hiromi.jpg" alt="Hiromi Uehara">
             <h3>Hiromi Uehara</h3>
         </div>
 
         <!-- Ryuichi Sakamoto -->
         <div class="pianist-card">
-            <img src="../images/ryuchi small.jpg" alt="Ryuichi Sakamoto">
+            <img src="images/ryuchi small.jpg" alt="Ryuichi Sakamoto">
             <h3>Ryuichi Sakamoto</h3>
         </div>
     </div>
@@ -148,15 +157,23 @@
         <div class="footer-contact">
             <h3>Contact Us</h3>
             <div class="social-icons">
-                <a href="#"><img src="../images/Facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
             </div>
         </div>
         <div class="footer-bottom">
             <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
         </div>
     </footer>
+    <script>// 获取 burger-menu 和 nav 元素
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
+
+        // 点击 burger-menu 时，切换菜单的显示
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active'); // 切换 'active' 类来显示或隐藏菜单
+        });</script>
 </body>
 
 </html>
