@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Grand Trio Home Page</title>
-    <link rel="stylesheet" href="../web/css/style.css">
+    <link rel="stylesheet" href="../web/css/general.css">
+    <link rel="stylesheet" href="../web/css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,44 +31,6 @@
                 <li>
                     <a href="#pianist">Pianist</a>
                     <ul class="dropdown">
-                        <li><a href="web/about_hiromi.html">Hitomi</a></li>
-                        <li><a href="web/about_ryuchi.html">Ryuchi</a></li>
-                        <li><a href="web/about_animenz.html">Animez</a></li>
-                    </ul>
-                </li>
-                <li><a href="#works">Works Showcase</a>
-                    <ul class="dropdown-long">
-                        <li><a href="web/workshowcasehiromi.html">Hitomi</a></li>
-                        <li><a href="#">Ryuchi</a></li>
-                        <li><a href="web/workshowcaseanimenz.html">Animenz</a></li>
-                    </ul>
-                </li>
-                <li><a href="#sheet-music">Sheet Music Library</a>
-                    <ul class="dropdown-long">
-                        <li><a href="#">Hitomi</a></li>
-                        <li><a href="#">Ryuchi</a></li>
-                        <li><a href="#">Animez</a></li>
-                    </ul>
-                </li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <header class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo" class="logo-img">
-        </div>
-        <div class="burger-menu" id="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav id="nav-menu">
-            <ul>
-                <li>
-                    <a href="#pianist">Pianist</a>
-                    <ul class="dropdown">
                         <li><a href="about_hiromi.html">Hitomi</a></li>
                         <li><a href="about_ryuchi.html">Ryuchi</a></li>
                         <li><a href="about_animenz.html">Animez</a></li>
@@ -75,7 +40,7 @@
                     <ul class="dropdown-long">
                         <li><a href="workshowcasehiromi.html">Hitomi</a></li>
                         <li><a href="workshowcaseryuchi.html">Ryuchi</a></li>
-                        <li><a href="workshowcaseanimenz.html">Animez</a></li>
+                        <li><a href="workshowcaseanimenz.html">Animenz</a></li>
                     </ul>
                 </li>
                 <li><a href="#sheet-music">Sheet Music Library</a>
@@ -90,16 +55,6 @@
             </ul>
         </nav>
     </header>
-
-
-    <script>
-        const burgerMenu = document.getElementById('burger-menu');
-        const navMenu = document.getElementById('nav-menu');
-
-        burgerMenu.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
 
     <section class="bgimg">
         <div class="bgimg-text">
@@ -177,6 +132,14 @@
             </div>
         </footer>
     </footer>
+    <script>// 获取 burger-menu 和 nav 元素
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
+
+        // 点击 burger-menu 时，切换菜单的显示
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active'); // 切换 'active' 类来显示或隐藏菜单
+        });</script>
 </body>
 
 </html>
