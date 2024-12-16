@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=!, initial-scale=1.0">
     <title>The Grand Trio Home Page</title>
-    <link rel="stylesheet" href="../web/css/about_ryuchi.css">
     <link rel="stylesheet" href="../web/css/general.css">
+    <link rel="stylesheet" href="../web/css/about_ryuchi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,9 +17,14 @@
 <body>
     <header class="navbar">
         <div class="logo">
-            <a href="../index.html">
+            <a href="index.html">
                 <img src="../web/images/logo.png" alt="Logo" class="logo-img">
             </a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <nav>
             <ul>
@@ -34,14 +39,14 @@
                 <li><a href="#works">Works Showcase</a>
                     <ul class="dropdown-long">
                         <li><a href="about_hiromi.html">Hitomi</a></li>
-                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="about_ryuchi.html">Ryuchi</a></li>
                         <li><a href="about_animenz.html">Animez</a></li>
                     </ul>
                 </li>
                 <li><a href="#sheet-music">Sheet Music Library</a>
                     <ul class="dropdown-long">
                         <li><a href="workshowcasehiromi.html">Hitomi</a></li>
-                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="workshowcaseryuchi.html">Ryuchi</a></li>
                         <li><a href="workshowcaseanimenz.html">Animez</a></li>
                     </ul>
                 </li>
@@ -50,7 +55,7 @@
             </ul>
         </nav>
     </header>
-    
+
 
     <div class="hero-section">
         <div class="text-container">
@@ -163,6 +168,14 @@
             </div>
         </footer>
     </footer>
+    <script>// 获取 burger-menu 和 nav 元素
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
+
+        // 点击 burger-menu 时，切换菜单的显示
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active'); // 切换 'active' 类来显示或隐藏菜单
+        });</script>
 </body>
 
 </html>

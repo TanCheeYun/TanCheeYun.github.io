@@ -1,0 +1,158 @@
+/*background*/
+
+.bgimg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(../images/index.png) no-repeat center center/cover;
+    text-align: center;
+}
+
+.bgimg-text h1 {
+    margin-top: -90px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 8em;
+    color: #ff8200;
+}
+
+/* hiromi */
+body {
+    margin: 0;
+    font-family: "Yeseva One", serif;
+    background-color: #000;
+    color: #fff;
+    font-weight: 400;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    border-top: 1px solid #ff8200;
+    /* line */
+    border-bottom: 0.5px solid #ff8200;
+    /* line */
+}
+
+.image-container {
+    flex: 2;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+}
+
+.learn-more-link:hover {
+    color: #ff8200;
+}
+
+.content-container {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.content-container h2 {
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.content-container h3 {
+    font-size: 34px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #6A222E;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.learn-more-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #6A222E;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/*animez*/
+
+.content-container-animez {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.content-container-animez h2 {
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.content-container-animez h3 {
+    font-size: 34px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #017EC1;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.learn-more-link-animez {
+    text-decoration: none;
+    font-size: 20px;
+    color: #017EC1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.learn-more-link-animez:hover {
+    color: #ff8200;
+}
+
+/*Ryuchi*/
+
+.content-container-ryuchi {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.content-container-ryuchi h2 {
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.content-container-ryuchi h3 {
+    font-size: 34px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #C3B26D;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.learn-more-link-ryuchi {
+    text-decoration: none;
+    font-size: 20px;
+    color: #C3B26D;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.learn-more-link-ryuchi:hover {
+    color: #ff8200;
+}

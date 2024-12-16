@@ -4,8 +4,8 @@
 <head>
     <title>abouthiromipage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/works_ryuchi.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/works_ryuchi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,7 +39,7 @@
                 <li><a href="#works">Works Showcase</a>
                     <ul class="dropdown-long">
                         <li><a href="workshowcasehiromi.html">Hitomi</a></li>
-                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="workshowcaseryuchi.html">Ryuchi</a></li>
                         <li><a href="workshowcaseanimenz.html">Animez</a></li>
                     </ul>
                 </li>
@@ -56,6 +56,7 @@
         </nav>
     </header>
 
+<<<<<<< HEAD
     <script>
         const burgerMenu = document.getElementById('burger-menu');
         const navMenu = document.getElementById('nav-menu');
@@ -102,11 +103,61 @@
           <p>A deeply personal and experimental album, async reflects Sakamoto’s contemplations on life, mortality, and nature, influenced by his battle with cancer. The album is a blend of ambient, classical, and minimalistic elements.
 
             async is celebrated as one of his most profound works, showing his introspective and experimental side.</p>
+=======
+
+
+
+
+    <div class="hero-section">
+        <div class="text-container">
+            <h1 class="title-ryuchi">Work Showcase </h1>
+            <h2 class="subtitle">RYUICHI<br>SAKAMOTO</h2>
+>>>>>>> 090e620287792f3077a328837ae9647d44010091
         </div>
     </div>
-  </div>
+    <div class="work-section">
+        <div class="work-item left">
+            <div class="work-image">
+                <img src="../web/images/ryuchi_about1.jpg" alt="Merry Christmas Mr. Lawrence">
+            </div>
+            <div class="work-content">
+                <h3>1957</h3>
+                <h2>Merry Christmas Mr. Lawrence</h2>
+                <p>Sakamoto's first major film score, which includes the hauntingly beautiful main theme. This
+                    soundtrack became an instant classic and remains one of his most recognized works.</p>
+            </div>
+        </div>
 
-  <div class="related-section-title">Other Pianist</div>
+        <div class="work-item right">
+            <div class="work-content">
+                <h3>1987</h3>
+                <h2>The Last Emperor</h2>
+                <p>Co-composed with David Byrne and Cong Su, this Oscar-winning score blends Asian and Western musical
+                    elements, creating an evocative soundscape that enhances the epic story of the last emperor of
+                    China.</p>
+            </div>
+            <div class="work-image">
+                <img src="../web/group/images/Group 13.jpg" alt="The Last Emperor">
+            </div>
+        </div>
+        <div class="work-item left">
+            <div class="work-image">
+                <img src="../Web/group/images/Group 14.jpg" alt="Merry Christmas Mr. Lawrence">
+            </div>
+            <div class="work-content">
+                <h3>2017</h3>
+                <h2>Async</h2>
+                <p>A deeply personal and experimental album, async reflects Sakamoto’s contemplations on life,
+                    mortality, and nature, influenced by his battle with cancer. The album is a blend of ambient,
+                    classical, and minimalistic elements.
+
+                    async is celebrated as one of his most profound works, showing his introspective and experimental
+                    side.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-section-title">Other Pianist</div>
     <div class="related-pianists">
         <!-- Hiromi Uehara -->
         <div class="pianist-card">
@@ -121,7 +172,7 @@
         </div>
     </div>
 
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer-section">
             <h3>Works Showcase</h3>
             <ul>
@@ -158,6 +209,14 @@
             <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
         </div>
     </footer>
+    <script>// 获取 burger-menu 和 nav 元素
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
+
+        // 点击 burger-menu 时，切换菜单的显示
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active'); // 切换 'active' 类来显示或隐藏菜单
+        });</script>
 </body>
 
 </html>
