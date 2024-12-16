@@ -133,7 +133,7 @@ p {
 
 .tom {
     flex: 1;
-    padding: 0px;
+    padding: 50px;
     
 }
 
@@ -435,7 +435,7 @@ p {
     .tom {
         width: 100%;
         align-items: center;
-        
+        padding: 50px;
     }
 
     /*Spiral*/
