@@ -2,10 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    
     font-family: "Yeseva One", serif;
-    background-color: #260A0F;
+    background-color: #6A222E;
     color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
@@ -34,7 +33,6 @@ body {
 
 .showtext {
     font-size: 75px;
-    font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
@@ -46,7 +44,6 @@ body {
 
 .subtitle {
     font-size: 25px;
-    font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
@@ -59,37 +56,39 @@ body {
 /* workshowcase*/
 
 /* images */
-.imageseeker {
-    flex: 1;
-    width: 250px;
-    height: 386px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 0 150px;
 
+.all{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+/* 让文本和图片水平居中对齐 */
+.worktext1 {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.imageseeker {
+   
+    margin: 0 ;
+    padding: 50px;
+    width: 35%;
 }
 
 
 
 /*content*/
 
-.work {
-
-    margin: 0 auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
 
 
 .text-content {
-    flex: 1;
-    padding: 15px;
-
-
+    
+    width: 55%;
+    padding: 0 20px;
 
 }
 
@@ -121,25 +120,35 @@ p {
     letter-spacing: 0px;
     text-align: justify;
     margin-top: 0;
-    max-width: 650px;
+ 
 }
 
-/* 让文本和图片水平居中对齐 */
-.worktext1 {
-    display: flex;
-    align-items: center;
-}
+
+
 
 
 
 /*anthermind content*/
+
+.anthermind {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+   
+}
+
+.tom {
+    flex: 1;
+    padding: 50px;
+    
+}
 
 .album-tom {
     font-size: 1.4rem;
     color: #6A222E;
     letter-spacing: 1px;
     font-weight: 400px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .tomjerry {
@@ -150,39 +159,39 @@ p {
     margin-bottom: 15px;
 }
 
-.anthermind {
-    display: flex;
-    align-items: center;
 
-}
 
 .imagetom {
     flex: 0;
+    width: 40%;
+    margin: 0 ;
+    padding: 50px;
     
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 0 150px;
-    margin-top: 100px;
 
 }
 
-.tom {
-    flex: 1;
 
-    margin: 0 150px;
-}
 
 
 /*spiral*/
 
+.spiral{
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    
+}
+
+.imagelaby {
+    margin: 0 ;
+    padding: 50px;
+    width: 40%;
+    
+}
 
 .contant {
     flex: 1;
-    width: 65%;
-    margin: 0 100px;
-    padding: 20px;
-
+    padding: 50px;
 }
 
 .album-spiral {
@@ -215,21 +224,9 @@ p {
 }
 
 /* 让文本和图片水平居中对齐 */
-.spiral {
 
-    display: flex;
-    align-items: center;
-    margin-top: 150px;
-}
 
-.imagelaby {
-    flex: 0;
-    
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 0 150px;
-}
+
 
 
 /*other text*/
@@ -347,7 +344,7 @@ p {
 
 
 
-@media screen and (max-width:600px) {
+@media  (max-width:768px) {
 
     
 
@@ -355,13 +352,14 @@ p {
     .title {
         width: 100%;
         background-position: 70% 70%;
-
+        height:100vh ;
     }
 
     .showtext {
         font-size: 60px;
-        margin-bottom: 150px;
-        word-spacing: 150px;
+      display: flex;
+        margin-bottom: 100px;
+       padding-bottom: 30px;
     }
 
     .subtitle {
@@ -373,15 +371,19 @@ p {
     }
 
 
+
+
+
     /*Seeker*/
 
     .worktext1 {
         flex-direction: column;
-
+        width:100%;
+        padding: 0px;
     }
 
     .album {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .Seeker {
@@ -393,18 +395,14 @@ p {
     }
 
     .imageseeker {
-        width: 300px;
+        width:70%;
         align-items: center;
         margin: 0;
-
+        padding: 0;
     }
 
     .text-content {
-        flex-direction: column;
-
-        padding: 0;
-        margin: 80px;
-        margin-top: 50px;
+       width: 70%;
     }
 
     /*anthermind*/
@@ -412,16 +410,20 @@ p {
     .anthermind {
         flex-direction: column;
         flex-direction: column-reverse;
+        padding: 50px;
     }
 
 
     .imagetom {
-        width: 320px;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
     .album-tom {
         font-size: 1.3rem;
-        font-weight: 400px;
+        
     }
 
     .tomjerry {
@@ -434,36 +436,26 @@ p {
     }
 
     .tom {
-        width: 300px;
+        width: 100%;
         align-items: center;
-        margin: 70px;
+        
     }
-
-
-
-
-
-
-
-
-
-
-
 
     /*Spiral*/
 
     .imagelaby {
-        width: 300px;
-        height: 320px;
+        width:100%;
         align-items: center;
         margin: 0px;
-
+        padding: 0;
 
     }
 
     .spiral {
         flex-direction: column;
-        margin-top: 70px;
+        margin: 0;
+        padding: 60px;
+       
     }
 
     .album-spiral {
@@ -479,7 +471,8 @@ p {
     }
 
     .contant {
-        margin: 40px;
+        width: 100%;
+        align-items: center;
     }
 
     /*other*/
@@ -527,3 +520,6 @@ p {
 
 
 }
+@media (max-width: 480px) {
+   
+  }
