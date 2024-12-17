@@ -71,7 +71,8 @@ body{
     padding: 5px;
     text-align: left;
     width: 80%;
-   
+   margin-bottom: 20px;
+   margin-top: 20px;
 }
 
 .hightlight {
@@ -138,7 +139,8 @@ body{
     padding: 5px;
     text-align: left;
     width: 80%;
-   
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
@@ -298,7 +300,12 @@ body{
 
     .container {
         width: 80%;
+        margin-bottom: 5px;
     }
+
+.container2{
+    margin-top: 5px;
+}
 
     .image {
         max-width: 100%;
@@ -391,6 +398,11 @@ body{
     
         .container {
             width: 80%;
+            margin-bottom: 5px;
+        }
+
+        .container2{
+            margin-top: 5px;
         }
     
         .image {
@@ -444,7 +456,8 @@ body{
            padding: 0px;
         }
     
-    
+        
+        
         .pianist-container {
             display: flex;
             justify-content: center;
