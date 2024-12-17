@@ -228,6 +228,17 @@ ul li:hover ul.dropdown-long {
         font-size: 0.8rem;
     }
 
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .footer-section h3 {
+        font-size: 14px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
 
 }
 
