@@ -225,9 +225,13 @@ ul li:hover ul.dropdown-long {
     }
 
     .footer-bottom {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
-
+    .footer-contact h3 {
+        
+        font-size: 12px;
+    
+    }
 
 }
 

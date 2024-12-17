@@ -359,33 +359,7 @@ body{
        
     }
 
-    .footer-section h3 {
-        
-        font-size: 12px;
-       
-    }
-    
-.footer-contact h3{
-font-size: 15px;
-}
-
-.footer-contact {
-    font-size: 10px;
-}
-
-.footer-contact h3 {
-    
-    margin-top: 20px;
-    
-    font-size: 10px;
-
-}
-
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
+  
 .body{
     font-size: 16px;    
 }
@@ -478,33 +452,7 @@ font-size: 15px;
            
         }
     
-        .footer-section h3 {
-            
-            font-size: 12px;
-           
-        }
-        
-    .footer-contact h3{
-    font-size: 15px;
-    }
-    
-    .footer-contact {
-        font-size: 10px;
-    }
-    
-    .footer-contact h3 {
-        
-        margin-top: 20px;
-        
-        font-size: 10px;
-    
-    }
-    
-    .social-icons a {
-        margin: 0 10px;
-        display: inline-block;
-    }
-    
+      
     body {
         font-size: 14px;
     }
