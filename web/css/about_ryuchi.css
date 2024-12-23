@@ -29,21 +29,21 @@ body, html {
 
 /* Title Styling */
 .title-ryuchi {
-    font-size: 8rem; /* Adjust size for ABOUT */
+    font-size: 95px; /* Adjust size for ABOUT */
     font-weight: 100;
     margin: 0;
-    line-height: 1;
+    text-align: center;
     color: #C3B26D;
     padding: 50px;
 }
 
 /* Subtitle Styling */
 .subtitle {
-    font-size: 5.5rem; /* Bigger for the name */
+    font-size: 80px; /* Bigger for the name */
     font-weight: 100;
-    margin: 30px 0 0;
-    line-height: 1.2;
+    margin: 30px;
     padding: 20px;
+    text-align: left;
 
 }
 
@@ -81,79 +81,62 @@ p {
     padding-top: 100px;
 }
 
-
-/* Adjust for smaller screens */
-@media (max-width: 768px) {
-    .title-ryuchi {
-        font-size: 4em;
-    }
-    .subtitle {
-        font-size: 3rem;
-        margin-left: 10%;
-    }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
 }
 
-/*photo*/
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
-  }
-  .title {
-    font-size: 3.5rem;
-    font-weight: 100;
-    margin-bottom: 60px;
-    color: #FFF;
-  }
-  .work-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 两列布局 */
-    gap: 50px 30px; /* 设置行间距和列间距 */
-    width: 100%;
-    max-width: 1200px;
-  }
-  .work-item {
-    text-align: center;
-    position: relative;
-  }
+.title {
+  font-size: 3.5rem;
+  font-weight: 100;
+  margin-bottom: 60px;
+  color: #FFF;
+}
 
-  .work-item:nth-child(1) {
-    grid-column: 1 / 2; /* 第一项靠左 */
-  }
-  .work-item:nth-child(2) {
-    grid-column: 2 / 3; /* 第二项靠右 */
-  }
-  .work-item:nth-child(3) {
-    grid-column: 1 / 2; /* 第三项靠左 */
-  }
-  .work-item img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 50%;
-    filter: brightness(0.7);
-    transition: filter 0.3s ease;
-  }
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 默认两列布局 */
+  gap: 50px 30px; /* 设置行间距和列间距 */
+  width: 100%;
+  max-width: 1200px;
+}
 
-  .work-item img:hover {
-    filter: brightness(1.5);
-  }
+.work-item {
+  text-align: center;
+  position: relative;
+}
 
-  .work-item .caption {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  
-  .work-item .arrow {
-    color: #bfbf70;
-    margin-top: 10px;
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-  }
-  .work-item:hover .arrow {
-    transform: translateX(10px);
-  }
+.work-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.work-item img:hover {
+  filter: brightness(1.5);
+}
+
+.work-item .caption {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #bfbf70;
+}
+
+.work-item .arrow {
+  color: #bfbf70;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.work-item:hover .arrow {
+  transform: translateX(10px);
+}
 
 /*timeline*/
 
@@ -187,139 +170,91 @@ p {
     line-height: 1.8;
 }
 
-/*other pianist*/
-
-.title {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    color: #fff;
-}
-
-.pianist-container {
-  display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 100px;
-}
-
-.pianist {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 15px;
-  
-}
-
-.pianist img {
+/*related pianist*/
+.photo-container img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
-  filter: grayscale(100%);
-  transition: filter 0.5s ease;
-  flex: 1;
+  margin-top: 20px;
 }
 
-.pianist:hover img {
-  filter: grayscale(0%);
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+.related-pianists {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.pianist-card {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pianist .name {
-  position: absolute;
-  bottom:30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2.5rem;
+.pianist-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.pianist-card:hover img {
+  filter: grayscale(0%);
+}
+
+.pianist-card img {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+
+.pianist-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 2px 2px 5px #000;
-}
-
-.pianist:nth-child(1) .name {
-  color: #017EC1;
-  bottom: 50px;
-}
-.pianist:nth-child(2) .name {
-  color: #b94d5f;
-}
-
-/*footer*/
-
-.footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 40px 0;
-}
-
-.footer-section {
-  display: inline-block;
-  width: 25%;
-  vertical-align: top;
-  margin-bottom: 20px;
-}
-
-.footer-section h3 {
-  font-weight: 300;
-  color: #ff8200;
-  margin-bottom: 10px;
-  font-size: 18px;
+  color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-.footer-section ul {
-  list-style-type: none;
-  padding: 10px 0px;
-  margin: 0;
-}
-
-.footer-section li {
-  margin: 30px 0;
-}
-
-.footer-contact {
-  font-weight: 300;
-  margin-top: 20px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  display: inline-block;
+.related-section-title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 
-.footer-bottom {
-  margin-top: 20px;
-  font-size: 12px;
-  color: rgb(255, 255, 255);
-}
 
-/*mobile*/
-/* 手机端响应式 */
 @media (max-width: 768px) {
   /* Hero section */
   .hero-section {
-      height: 60vh;
-      background-position: center center;
+    justify-content: center; 
+    text-align: center;
+    width: 100%;
+    height:100vh ;
+
   }
 
   .title-ryuchi {
-      font-size: 4em;
+      font-size: 80px;
       padding: 20px;
+      margin: 10px auto;
   }
 
   .subtitle {
-      font-size: 3rem;
-      margin-left: 10%;
+      font-size :70px;
+      text-align: center;
   }
 
   .text-container {
@@ -334,20 +269,30 @@ p {
   }
 
   .container {
-      flex-direction: column;
-      padding: 30px 10px;
-  }
+    padding: 30px 15px; /* 缩小容器内边距 */
+}
 
-  .work-grid {
-      grid-template-columns: 1fr; /* 一列布局 */
-      gap: 30px;
-  }
+.title {
+    font-size: 2.5rem; /* 缩小标题字体 */
+    margin-bottom: 40px;
+}
 
-  .work-item img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 10px;
-  }
+.work-grid {
+    grid-template-columns: 1fr; /* 改为单列布局 */
+    gap: 30px 20px; /* 调整行间距和列间距 */
+}
+
+.work-item img {
+    max-width: 200px; /* 图片缩小 */
+}
+
+.work-item .caption {
+    font-size: 1rem; /* 缩小文字大小 */
+}
+
+.work-item .arrow {
+    font-size: 1.2rem; /* 缩小箭头大小 */
+}
 
   .timeline h1 {
       font-size: 3rem;
@@ -375,21 +320,7 @@ p {
       object-fit: cover;
   }
 
-  .footer {
-      padding: 20px 0;
-  }
-
-  .footer-section {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 10px;
-  }
-
-  .footer-bottom {
-      font-size: 10px;
-  }
 }
-
 /* 更小屏幕 */
 @media (max-width: 480px) {
   /* Hero Section */
@@ -446,17 +377,4 @@ p {
       height: 100%;
   }
 
-  .footer {
-      padding: 15px 0;
-  }
-
-  .footer-section {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 10px;
-  }
-
-  .footer-bottom {
-      font-size: 10px;
-  }
 }
