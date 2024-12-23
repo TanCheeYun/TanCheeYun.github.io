@@ -24,21 +24,11 @@ body {
 
 .hero-text h1 {
     margin-top: -90px;
-    font-family: "Yeseva One", serif;
-    font-weight: 300;
-    font-style: normal;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-size: 100px;
     color: #BAE7FF;
 }
 
 .hero-text h2 {
     margin-top: -90px;
-    font-family: "Yeseva One", serif;
-    font-weight: 300;
-    font-style: normal;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    font-size: 50px;
     color: #BAE7FF;
 }
 
@@ -62,7 +52,7 @@ body {
 
 .special-text {
     font-family: "Yeseva One", serif;
-    font-size: 48px;
+    font-size: 50px;
     color: #BAE7FF;
     font-weight: 300;
     padding-right: 10px;
