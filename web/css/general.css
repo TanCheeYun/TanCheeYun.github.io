@@ -215,11 +215,11 @@ ul li:hover ul.dropdown-long {
     }
 
     .footer-section h3 {
-        font-size: 1.3rem;
+        font-size: 15px;
     }
 
     .footer-section ul {
-        font-size: 0.9rem;
+        font-size: 13px;
     }
 
     .footer-bottom {
@@ -234,9 +234,7 @@ ul li:hover ul.dropdown-long {
         font-size: 12px;
     }
 
-    .footer-section h3 {
-        font-size: 14px;
-    }
+
 
     .footer-bottom p {
         font-size: 12px;

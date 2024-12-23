@@ -13,7 +13,7 @@ body, html {
 .hero-section {
   width: 100%;
   height: 100vh; 
-  background: url(../images/Group\ 12.jpg) no-repeat center center/cover; 
+  background: url(../images/ryuchi_work.jpg) no-repeat center center/cover; 
   position: relative;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ body, html {
 
 /* Title Styling */
 .title-ryuchi {
-  font-size: 7rem; /* Adjust size for ABOUT */
+  font-size: 95px; 
   font-weight: 100;
   margin: 30px;
   line-height: 1;
@@ -33,7 +33,7 @@ body, html {
 
 /* Subtitle Styling */
 .subtitle {
-  font-size: 6rem; /* Bigger for the name */
+  font-size: 85px; 
   font-weight: 100;
   margin: 30px ;
   line-height: 1.2;
@@ -158,23 +158,28 @@ body, html {
 
 
 @media (max-width: 768px) {
+
   .hero-section {
       height: 60vh; 
       justify-content: center; 
       text-align: center;
+      width: 100%;
+      background-position: 70% 70%;
+      height:100vh ;
   }
 
   .title-ryuchi {
-      font-size: 3rem; 
+      font-size: 60px; 
       margin: 10px;
       padding: 10px;
+      text-align: left;
   }
 
   .subtitle {
-      font-size: 2rem; 
+      font-size: 30px; 
       margin: 10px auto;
       padding: 10px;
-      text-align: center;
+      text-align: left;
   }
 
   /* Work Section */
@@ -183,13 +188,12 @@ body, html {
   }
 
   .work-item {
-      flex-direction: column;
-      text-align: center;
-      margin-bottom: 20px;
+    flex-direction: column !important; 
+    text-align: center;
   }
 
   .work-image img {
-    display: none; 
+    margin-bottom: 20px
 }
 
   .work-content {
@@ -197,11 +201,11 @@ body, html {
   }
 
   .work-content h2 {
-      font-size: 1.5rem; 
+      font-size: 40px; 
   }
 
   .work-content p {
-      font-size: 0.9rem; 
+      font-size: 20px; 
   }
 
   /* Pianist Section */
