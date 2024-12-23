@@ -153,21 +153,21 @@
 
       .name, .name4, .name7{
         margin-top: 15px;
-        font-size:20px;
+        font-size:18px;
         font-weight: 100;
         color: #6A222E;
       }
     
       .name2, .name5, .name8{
         margin-top: 10px;
-        font-size:20px;
+        font-size:18px;
         font-weight: 100;
         color: #C3B26D;
       }
     
       .name3, .name6, .name9{
         margin-top: 10px;
-        font-size:20px;
+        font-size:18px;
         font-weight: 100;
         color: #017EC1;
       }
@@ -180,7 +180,7 @@
       
       .categories h4 {
         margin-top: 5px;
-        font-size: 18px;
+        font-size: 15px;
         color: #fff;
         font-weight: 100;
         margin-bottom: 50px;

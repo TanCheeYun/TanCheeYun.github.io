@@ -26,7 +26,7 @@ body {
 }
 
 .showtext {
-    font-size: 75px;
+    font-size: 7rem;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
@@ -37,7 +37,7 @@ body {
 }
 
 .subtitle {
-    font-size: 25px;
+    font-size: 2rem;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
@@ -81,23 +81,23 @@ body {
 
 .text-content {
     
-    width: 55%;
-    padding: 0 20px;
+    width: 50%;
+    padding: 50px;
 
 }
 
 .album {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     
     color: #6A222E;
-    font-weight: 400;
+   
     letter-spacing: 1px;
     padding-bottom: 5px;
 
 }
 
 .Seeker {
-    font-size: 35px;
+    font-size: 1.8rem;
     
     color: #6A222E;
     font-weight: 400;
@@ -127,21 +127,21 @@ p {
 .anthermind {
     display: flex;
     align-items: center;
-    padding: 80px;
-   
+    padding: 50px;
+    justify-content: space-between;
 }
 
 .tom {
-    flex: 1;
+    width: 50%;
     padding: 50px;
-    
+   
 }
 
 .album-tom {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #6A222E;
     letter-spacing: 1px;
-    font-weight: 400px;
+    
     padding-bottom: 5px;
 }
 
@@ -153,11 +153,19 @@ p {
     margin-bottom: 15px;
 }
 
-
+.tom p{
+    font-size: 1rem;
+    color: #fff;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: justify;
+    margin-top: 0;
+}
 
 .imagetom {
-    flex: 0;
-    width: 35%;
+    
+    width: 33%;
     margin: 0 ;
     padding: 50px;
     
@@ -172,34 +180,35 @@ p {
 .spiral{
     display: flex;
     align-items: center;
-    padding: 80px;
-    
+    padding: 50px;
+    justify-content: space-between;
 }
 
 .imagelaby {
     margin: 0 ;
-    padding: 50px;
-    width: 35%;
+    padding: 45px;
+    width: 33%;
     
 }
 
 .contant {
-    flex: 1;
+   
     padding: 50px;
+    width: 50%;
 }
 
 .album-spiral {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: "Yeseva One", serif;
     color: #6A222E;
-    font-weight: 400;
+   
     letter-spacing: 1px;
     margin-bottom: 25px;
 
 }
 
 .laby {
-    font-size: 35px;
+    font-size: 1.8rem;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
@@ -338,7 +347,7 @@ p {
 
 
 
-@media  (max-width:768px) {
+@media  (max-width:840px) {
 
     
 .all{
@@ -388,6 +397,7 @@ p {
 
     .text-content p {
         font-size: 15px;
+        
     }
 
     .imageseeker {
@@ -435,7 +445,7 @@ p {
     .tom {
         width: 100%;
         align-items: center;
-        padding: 50px;
+        
     }
 
     /*Spiral*/
@@ -470,6 +480,7 @@ p {
     .contant {
         width: 100%;
         align-items: center;
+        padding: 0px;
     }
 
     /*other*/
@@ -517,7 +528,7 @@ p {
 
 
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
        
 .all{
     padding-top: 60px;
@@ -565,7 +576,8 @@ p {
     }
 
     .text-content p {
-        font-size: 10px;
+        font-size: 15px;
+        
     }
 
     .imageseeker {
@@ -575,10 +587,7 @@ p {
         padding: 0;
     }
 
-    .text-content {
-       width: 100%;
-       padding: 20px;
-    }
+   
 
     /*anthermind*/
 
