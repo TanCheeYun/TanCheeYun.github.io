@@ -303,13 +303,16 @@ p {
   color: rgb(255, 255, 255);
 }
 
-/*mobile*/
-/* 手机端响应式 */
 @media (max-width: 768px) {
   /* Hero section */
   .hero-section {
-      height: 60vh;
-      background-position: center center;
+    height: 60vh; 
+    justify-content: center; 
+    text-align: center;
+    width: 100%;
+    background-position: 70% 70%;
+    height:100vh ;
+
   }
 
   .title-ryuchi {
