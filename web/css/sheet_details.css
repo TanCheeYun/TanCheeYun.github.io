@@ -1,0 +1,68 @@
+.backbutton {
+    margin: 80px;
+    margin-top: 140px;
+}
+
+.sheetimage {
+    width: 100%;
+    object-fit: cover;
+    filter: invert(1);
+}
+
+.sheet_img {
+    width: 56%;
+    min-width: 300px;
+    margin: 80px;
+    margin-top: 0;
+}
+
+.sheet_body {
+    display: flex;
+}
+
+.download_button {
+    display: flex;
+}
+
+.comment_title {
+    padding-bottom: 50px;
+}
+
+.download_button div {
+    background-color: #ff8200;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.pdf {
+    margin-top: 30px;
+}
+
+.pdf div {
+    margin-top: 15px;
+}
+
+.rate_star {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.reviews {
+    margin-top: 60px;
+}
+
+.comment_side {
+    margin-right: 80px;
+    max-width: 30%;
+}
+
+.review_body {
+    display: flex;
+    flex-direction: column;
+
+}

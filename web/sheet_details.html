@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animenz About Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/sheet_details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#pianist">Pianist</a>
+                    <ul class="dropdown">
+                        <li><a href="about_hiromi.html">Hiromi</a></li>
+                        <li><a href="about_ryuchi.html">Ryuchi</a></li>
+                        <li><a href="about_animenz.html">Animenz</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#works">Works Showcase</a>
+                    <ul class="dropdown-long">
+                        <li><a href="workshowcasehiromi.html">Hiromi</a></li>
+                        <li><a href="workshowcaseryuchi.html">Ryuchi</a></li>
+                        <li><a href="workshowcaseanimenz.html">Animenz</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sheet-music">Sheet Music Library</a>
+                    <ul class="dropdown-long">
+                        <li><a href="#">Hiromi</a></li>
+                        <li><a href="#">Ryuchi</a></li>
+                        <li><a href="#">Animenz</a></li>
+                    </ul>
+                </li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="backbutton"><img src="backlogo" class="backlogo">Back</div>
+    <div class="sheet_body">
+        <div class="sheet_img"><img src="images/sheetimage.jpg" class="sheetimage"></div>
+        <div class="comment_side">
+            <div class="comment_title">Idol (Oshi no Ko OP)</div>
+            <div class="download_button">
+                <div>Download</div>
+                <div>Print</div>
+            </div>
+            <div class="pdf">
+                <div>PDF</div>
+                <div>MIDI</div>
+                <div class="rate_star">★ ★ ★ ★ ★</div>
+            </div>
+            <div class="reviews">Reviews</div>
+            <div class="review_body">
+                <div class=""><img src="reviewppl" class=""></div>
+                <div>
+                    <div>Jonathan</div>
+                    <div>★★★★★</div>
+                    <div>Well done arrangement for this song. The level renders it complex to give a challenge, but not
+                        unreachable for piano players. </div>
+                </div>
+                <div class="review_body">
+                    <div class=""><img src="reviewppl" class=""></div>
+                    <div>
+                        <div>Jonathan</div>
+                        <div>★★★★★</div>
+                        <div>Well done arrangement for this song. The level renders it complex to give a challenge, but
+                            not
+                            unreachable for piano players. </div>
+                    </div>
+                    <div class="review_body">
+                        <div class=""><img src="reviewppl" class=""></div>
+                        <div>
+                            <div>Jonathan</div>
+                            <div>★★★★★</div>
+                            <div>Well done arrangement for this song. The level renders it complex to give a challenge,
+                                but not
+                                unreachable for piano players. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Works Showcase</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Sheet Music Library</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Events</h3>
+            <ul>
+                <li>Ryuichi Sakamoto</li>
+                <li>Animenz's</li>
+                <li>Hiromi</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+    <script>// 获取 burger-menu 和 nav 元素
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
+
+        // 点击 burger-menu 时，切换菜单的显示
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active'); // 切换 'active' 类来显示或隐藏菜单
+        });</script>
+</body>
+
+</html>
