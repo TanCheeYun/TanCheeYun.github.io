@@ -17,6 +17,26 @@ p {
     color: white;
 }
 
+h1 {
+    /*this is for main title*/
+    font-family: "Yeseva One", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 100px;
+}
+
+h2 {
+    /*this is for subtitle*/
+    font-family: "Yeseva One", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 50px;
+}
+
+
+
 /*navbar*/
 .navbar {
     display: flex;
