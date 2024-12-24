@@ -148,9 +148,9 @@ body{
 
 /*list*/
 
-.listhiromi {
+.listhiromi h1 {
     /*hiromi字*/
-    font-size: 22px;
+    font-size: 48px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
@@ -310,7 +310,7 @@ body{
 
 .title{
     
-    font-size:4.5rem;
+    font-size:80px;
     padding:20px ;
     padding-left: 60px;
     padding-top: 120px;
@@ -320,7 +320,7 @@ body{
 
 
     .subtitle {
-        font-size: 3.5rem;
+        font-size: 70px;
         padding-top: 120px;
         padding-left: 120px;
 
@@ -333,13 +333,14 @@ body{
     }
 
     .container {
-        width: 80%;
+        width: 95%;
         margin-bottom: 5px;
     }
 
 
     .container2{
     margin-top: 5px;
+    width: 95%;
     }
 
     .image {
@@ -362,12 +363,12 @@ body{
 
 
 
-    .listhiromi {
-        font-size: 15px;
+    .listhiromi h1{
+        font-size: 30px;
         width: 80%;
         padding-left: 60px;
         margin: 0;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
 
 
@@ -376,7 +377,7 @@ body{
     max-width: 90%;
     font-size: 25px;
     padding: 0px;
-     margin-left: 90px;
+     margin-left: 80px;
     }
 
     .year {
