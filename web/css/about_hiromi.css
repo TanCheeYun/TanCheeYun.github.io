@@ -340,6 +340,7 @@ body{
 
     .container2{
     margin-top: 5px;
+    width: 95%;
     }
 
     .image {
@@ -376,7 +377,7 @@ body{
     max-width: 90%;
     font-size: 25px;
     padding: 0px;
-     margin-left: 90px;
+     margin-left: 80px;
     }
 
     .year {
