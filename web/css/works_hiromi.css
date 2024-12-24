@@ -322,6 +322,9 @@ p {
 
 /* 星级样式 */
 .star {
+    display: flex;
+    justify-content: left;
+   
     margin-top: 5px;
     margin-right: 140px;
 }
@@ -334,6 +337,8 @@ p {
 }
 
 .star2 {
+    display: flex;
+    justify-content: left;
     margin-top: 5px;
     margin-right: 140px;
 }
