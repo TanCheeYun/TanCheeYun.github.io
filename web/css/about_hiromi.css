@@ -14,20 +14,27 @@ body{
 
 
 /*background*/
-
-
-
 .Title {
     background: url(../images/hiromi.jpg) center;
     background-repeat: no-repeat;
     background-size:cover;
     width: 100%;
     height: 100%;
-    align-items: center;
-   
+    
 
 }
+.Title-container{
+    display: flex;
+    justify-content: flex-start; /* Align text towards the left */
+    align-items:center;
+margin-left: 50px;
+}
 
+.Title-container2{
+    display: flex;
+    justify-content: center;
+}
+        
 
 
 .title  {
@@ -35,31 +42,22 @@ body{
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
-    display: flex;
-    margin: 50px;
-    padding:50px ;
-   padding-left: 200px;
-    padding-top: 140px;
-    padding-bottom: 10px;
+    text-align:left;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 
-.subtitle {
+.Title-container2 h2 {
     font-size: 80px;
     color: #6A222E;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.5;
     word-spacing: 130px;
-    display: flex;
-    justify-content: center;
-    padding-top: 70px;
-    padding-left: 30px;
-    margin: 0px;
+    padding-left: 40px;
+   padding-top: 0px;
 }
-
-
-
 
 
 
@@ -92,42 +90,15 @@ body{
 
 
 
-.image {
-    background-image: url(../images/hiromi\ centre.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
-    max-width: 100%;
+.imagesection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.imagesection img{
     width: 100%;
-
-
-}
-
-
-.image h1 {
-    margin: 0 auto;
-    font-size: 50px;
-    max-width: fit-content;
-    color: #6A222E;
-    font-weight: 400;
-    position: relative;
-    top: 150px;
-    right: 115px;
-    width: 20%;
-}
-
-.image h2 {
-
-    margin: 0 auto;
-    max-width: fit-content;
-    font-size: 50px;
-    color: #6A222E;
-    font-weight: 400;
-    position: relative;
-    left: 90px;
-    top: 130px;
-    width: 20%;
 }
 
 /*paragraph 2*/
@@ -146,13 +117,18 @@ body{
 
 /*list*/
 
+.listhiromi{
+    display: flex;
+    justify-content: center;
+   
+}
+
 .listhiromi h1 {
     /*hiromi字*/
-    font-size: 48px;
+    font-size: 46px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
-    margin-left: 270px;
     margin-bottom: 10px;
 }
 
@@ -172,6 +148,25 @@ body{
     display: flex;
     align-items: flex-start;
     margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.event2 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    justify-content: space-between;
+   
+}
+
+.event2 p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+   margin-left: 20px;
+    /*数字跟字的空间*/
+    color: #fff;
+ width: 40%;
 }
 
 .year {
@@ -185,7 +180,7 @@ body{
     font-size: 20px;
     line-height: 1.4;
     margin: 0;
-    padding-left: 120px;
+   margin-left: 20px;
     /*数字跟字的空间*/
     color: #fff;
     width: 60%;
@@ -262,38 +257,76 @@ body{
 
 @media screen and (max-width:1000px) {
     .title{
-       
-        padding:20px ;
-        padding-left: 180px;
-        padding-top: 100px;
-        
+       font-size: 90px;
     }
 
     .subtitle{
+      font-size: 85px;
+    }  
+    
+    .listhiromi{
+       width: 100%;
       
-        padding-top: 100px;
-        padding-left: 230px;
-        
-        }
+    }       
 
-        
+    .listhiromi h1 {
+        /*hiromi字*/
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+   
 }
 
 
 @media screen and (max-width:820px) {
-    .title{
-       
-        padding:20px ;
-        padding-left: 100px;
-        padding-top: 100px;
         
+    .Title-container{
+        justify-content: center; /* Align text towards the left */
+   
     }
+    
+        .title{
+         
+          padding: 5%;
+        }
+ 
+        .subtitle{
+     
+           text-align: center;
+        }  
 
-    .subtitle{
-      
-        padding-top: 100px;
-        padding-left: 150px;
+
+
+        .imagesection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+           
+        }
+       
         
+        .imagesection img{
+            width: 80%;
+          
+        } 
+
+           
+     .listhiromi{
+        width: 100%;
+     }
+    
+        .listhiromi h1 {
+             /*hiromi字*/
+             font-size: 40px;
+             margin-bottom: 50px;
+             text-align: center;
+         }
+
+        .event2{
+            width:65%;
+           
         }
 }
 
@@ -306,21 +339,18 @@ body{
     
 
 
-.title{
+    .title{
     
     font-size:80px;
-    padding:20px ;
-    padding-left: 60px;
-    padding-top: 120px;
    
-}
+   
+    }
 
 
 
     .subtitle {
         font-size: 70px;
-        padding-top: 120px;
-        padding-left: 120px;
+     
 
     }
 
@@ -341,34 +371,34 @@ body{
     width: 95%;
     }
 
-    .image {
-        max-width: 100%;
-        background-size: 90%;
-        height: 350px;
-    }
+   .imagesection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
-    .image h1 {
-        font-size: 40px;
-        width: 18%;
-        
+   }
 
-    }
-
-    .image h2 {
-        font-size: 40px;
-        left: 50px;
+    .imagesection img{
+       width: 80%;
     }
 
 
 
     .listhiromi h1{
         font-size: 30px;
-        width: 80%;
-        padding-left: 60px;
-        margin: 0;
-        padding-bottom: 50px;
+        width: 90%;
+      
     }
 
+    .event2{
+        width: 100%;
+    }
+
+    .event2 p{
+        font-size: 17px;
+        width: 70%;
+    }
 
     .timeline {
     align-items: center;
@@ -386,10 +416,9 @@ body{
 
     .event p {
         font-size: 17px;
-        padding-left: 70px;
-        margin-bottom: 40px;
+        
         margin-right: 50px;
-       padding: 15px;
+    
     }
 
 
@@ -401,30 +430,9 @@ body{
     }
 
   
-.body{
+    .body{
     font-size: 16px;    
-}
-}
-
-
-@media screen and (max-width:400px) {
-    .title{
-    
-        font-size:80px;
-        padding:20px ;
-        padding-left: 50px;
-        padding-top: 100px;
-       
     }
-    
-    
-    
-        .subtitle {
-            font-size: 70px;
-            padding-top: 100px;
-            padding-left: 100px;
-    
-        }
-
 
 }
+
