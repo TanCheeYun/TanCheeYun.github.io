@@ -238,4 +238,13 @@
     .line{
         margin: 50px;
     }
+
+    .more-button {
+       left: 30px;
+    }
+    
+    .more-link {
+        padding: 35px 8px;
+       
+    }
 }
