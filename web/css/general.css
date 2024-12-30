@@ -275,7 +275,7 @@ ul li:hover ul.dropdown-long {
     font-weight: 300;
     color: #ff8200;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 
@@ -298,7 +298,7 @@ ul li:hover ul.dropdown-long {
     font-weight: bold;
     margin-top: 20px;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 
@@ -308,8 +308,8 @@ ul li:hover ul.dropdown-long {
 }
 
 
-.footer-bottom {
+.footer-bottom p {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
 }
