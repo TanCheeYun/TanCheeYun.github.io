@@ -17,11 +17,13 @@
 
 .all{
     margin: 0 auto;
-    width: 80%;
+    width:80%;
+    padding-left: 40px;
 }
 
 .featured{  
     margin-top: 65px;
+    margin-bottom: 30px;
 }
 
 .featured h3{
@@ -30,25 +32,92 @@
     font-weight: 400;
 }
 
-.container{
+.container,.container2{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1%;
-    row-gap: 40px;
+    row-gap: 150px;
 }
 
- .ryuchi1, .animenz1, .hiromi1, .ryuchi2, .animenz2, .hiromi2 {
-   
-   width:0%;
-   
+ .ryuchi1, .animenz1, .hiromi1, .ryuchi2, .animenz2, .hiromi2, .ryuchi3, .animenz3, .hiromi3 {
+
+   width:30%;
 
  }
 
+ .ryuchi1 img, .animenz1 img, .hiromi1 img, .ryuchi2 img, .animenz2 img, .hiromi2 img, .ryuchi3 img, .animenz3 img, .hiromi3 img {
+
+    width:80%;
+  }
 
 
+  /*ryuchi*/
+.name1, .name2, .name8 {
+    margin-top: 20px;
+    font-size:18px;
+    font-weight: 100;
+    color: #C3B26D;
+}
 
+/*animenz*/
+.name3,.name6,.name9{
+    margin-top: 20px;
+    font-size:18px;
+    font-weight: 100;
+    color: #017EC1;
+}
 
+/*hiromi*/
+.name4,.name5, .name7{
+    margin-top: 20px;
+    font-size:18px;
+    font-weight: 100;
+    color: #6A222E;
+}
+
+.star img, .star2 img {
+    width: 5%;
+    height: 18%;
+    margin-top: 10px;
+}
+
+.popular{
+    margin-top: 85px;
+    margin-bottom: 30px;
+}
+
+.popular h3{
+    font-size: 25px;
+    color:#FF8200;
+    font-weight: 400;
+}
+
+.line{
+   margin: 50px;
+}
+
+.more-button {
+    text-align:end;
+   position: relative;
+   bottom:300px;
+}
+
+.more-link {
+    padding: 35px 10px;
+    background-color: #FF8200;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.more-link:hover {
+    background-color: #C35E00;
+}
 
 
 
@@ -70,6 +139,23 @@
     .featured{
         align-items: flex-start;
     }
+    .ryuchi1, .animenz1, .hiromi1, .ryuchi2, .animenz2, .hiromi2,.ryuchi3, .animenz3, .hiromi3 {
+
+        width:40%;
+     
+    }
+     
+    .ryuchi1 img, .animenz1 img, .hiromi1 img, .ryuchi2 img, .animenz2 img, .hiromi2 img, .ryuchi3 img, .animenz3 img, .hiromi3 img {
+     
+         width:80%;
+    }
+    
+    .star img, .star2 img {
+        width: 5%;
+        height: 18%;
+        margin-top: 10px;
+      }
+     
 }
 
 
@@ -84,7 +170,72 @@
         font-size: 80px;
     }
 
+    .all{
+       padding-left: 0px;
+    }
+
     .featured{
        text-align: center;
+    }
+
+    .ryuchi1, .animenz1, .hiromi1, .ryuchi2, .animenz2, .hiromi2, .ryuchi3, .animenz3, .hiromi3 {
+
+        width:90%;
+     
+    }
+     
+    .hiromi1{
+        padding-left:60px ;
+    }
+    
+    .ryuchi1 img, .animenz1 img, .hiromi1 img, .ryuchi2 img, .animenz2 img, .hiromi2 img, .ryuchi3 img, .animenz3 img, .hiromi3 img {
+     
+         width:100%;
+    }
+
+    .name1, .name2, .name8 {    
+        margin-top: 20px;
+        font-size:20px;
+       text-align: center;
+    }
+
+    /*animenz*/
+    .name3,.name6,.name9{
+         margin-top: 20px;
+        font-size:20px;
+         text-align: center;
+    
+    }
+
+    /*hiromi*/
+    .name4,.name5,.name7{
+        margin-top: 20px;
+        font-size:20px ;
+     text-align: center;
+    }
+
+    .star img, .star2 img {
+        width: 5%;
+        height: 18%;
+        margin-top: 10px;
+        
+    }
+
+    .star , .star2 {
+        text-align: center;
+    }
+
+    .popular{
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    .popular h3{
+        font-size: 28px;
+       
+    }
+
+    .line{
+        margin: 50px;
     }
 }
