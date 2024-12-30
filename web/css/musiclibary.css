@@ -1,0 +1,90 @@
+/*background image*/
+
+.title{
+    background-image: url(../images/musiclibary.jpg);
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titletext{
+   font-size: 95px;
+    color: #FF8200;
+}
+
+.all{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.featured{  
+    margin-top: 65px;
+}
+
+.featured h3{
+    font-size: 25px;
+    color:#FF8200;
+    font-weight: 400;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1%;
+    row-gap: 40px;
+}
+
+ .ryuchi1, .animenz1, .hiromi1, .ryuchi2, .animenz2, .hiromi2 {
+   
+   width:0%;
+   
+
+ }
+
+
+
+
+
+
+
+
+/*table*/
+@media(max-width:840px) {
+
+    .title{
+        background-position: 50% ;
+    }
+
+    .titletext{
+        font-size: 90px;
+    }
+
+    .all{
+        max-width: 80%;
+    }
+    
+    .featured{
+        align-items: flex-start;
+    }
+}
+
+
+/*mobile*/
+@media (max-width:600px) {
+    
+    .title{
+       text-align: center;
+    }
+
+    .titletext{
+        font-size: 80px;
+    }
+
+    .featured{
+       text-align: center;
+    }
+}
