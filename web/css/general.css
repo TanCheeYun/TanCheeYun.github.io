@@ -309,6 +309,7 @@ ul li:hover ul.dropdown-long {
     }
 
     .social-icons img {
+        margin-top: 20px;
         width: 30px;
     }
 
@@ -381,6 +382,7 @@ ul li:hover ul.dropdown-long {
 }
 
 .social-icons img{
+    margin-top: 20px;
     width: 50%;
 }
 
