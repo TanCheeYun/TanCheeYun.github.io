@@ -313,11 +313,13 @@ ul li:hover ul.dropdown-long {
     }
 
     .footer-section h3 {
+         min-height: 35px;
         font-size: 15px;
     }
 
     .footer-section ul {
         font-size: 13px;
+
     }
 
     .footer-bottom {
@@ -326,6 +328,7 @@ ul li:hover ul.dropdown-long {
 
     .footer-contact h3 {
         font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .footer-bottom p {
