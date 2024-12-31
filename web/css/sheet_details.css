@@ -9,7 +9,7 @@
     filter: invert(1);
 }
 
-.sheet_img {
+.sheet_song {
     width: 56%;
     min-width: 300px;
     margin: 80px;
@@ -28,7 +28,7 @@
     padding-bottom: 50px;
 }
 
-.download_button div {
+.download_button1 {
     background-color: #ff8200;
     color: black;
     border: 1px solid black;
@@ -54,6 +54,7 @@
 
 .reviews {
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .comment_side {
@@ -61,8 +62,122 @@
     max-width: 30%;
 }
 
-.review_body {
+.review {
     display: flex;
     flex-direction: column;
+}
 
+.review_body {
+    display: flex;
+}
+
+.member_image img {
+    width: 40px;
+}
+
+.song_imagetext {
+    display: flex;
+}
+
+.song_play {
+    background-color: white;
+    max-width: 450px;
+    padding: 25px;
+    border-radius: 20px;
+    color: black;
+}
+
+.song_details {
+    text-align: center;
+    margin: 20px;
+}
+
+.song_image img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.play_section {
+    display: flex;
+}
+
+.play_button img,
+.pause_button img {
+    width: 35px;
+}
+
+.pause_button {
+    display: none;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.progress_section {
+    padding-left: 12px;
+    margin-top: 4px;
+    width: 75%;
+}
+
+.backbutton img {
+    width: 30px;
+}
+
+.song_title {
+    padding-left: 25px;
+    color: #ff8200;
+}
+
+.backbutton_section a {
+    text-decoration: none;
+    color: #ff8200;
+    font-size: 24px;
+}
+
+.backbutton {
+    display: flex;
+}
+
+.backbutton_text {
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.download_button a {
+    text-decoration: none;
+    color: black;
+}
+
+.pdf_text {
+    color: #ff8200;
+}
+
+.member_name {
+    color: #ff8200;
+}
+
+.member_image {
+    padding-right: 20px;
+}
+
+.member_review {
+    padding-top: 20px;
+    padding-bottom: 50px;
 }

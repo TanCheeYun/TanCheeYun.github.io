@@ -11,9 +11,8 @@ body {
 /*font*/
 p {
     font-family: "Yeseva One", serif;
-    font-size: 10px;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: white;
 }
 
@@ -24,6 +23,8 @@ h1 {
     font-style: normal;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     font-size: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -33,9 +34,29 @@ h2 {
     font-style: normal;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     font-size: 50px;
+    margin: 0;
+    padding: 0;
 }
 
+h3 {
+    /*this is for body title*/
+    font-family: "Yeseva One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
 
+h4 {
+    /*this is for paragraph title*/
+    font-family: "Yeseva One", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
 
 /*navbar*/
 .navbar {
