@@ -25,18 +25,17 @@ body {
     background-position: center center;
 }
 
-.showtext {
-    font-size: 7rem;
+.title h1{
+    
     color: #6A222E;
-    font-weight: 400;
-    letter-spacing: 1px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
 
-.subtitle {
+.title h2{
     font-size: 2rem;
     color: #6A222E;
     font-weight: 400;

@@ -22,15 +22,15 @@ body{
     height: 100%;
 
 }
+
 .title2{
     flex: 5;
 }
+
 .Title-container{
     display: flex;
     justify-content:flex-end; /* Align text towards the left */
    text-align:left;
-   
-  
 }
 
 .Title-container2{
