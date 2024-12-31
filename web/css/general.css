@@ -14,6 +14,7 @@ p {
     letter-spacing: 1px;
     line-height: 1.6;
     color: white;
+    font-size: 16px;
 }
 
 h1 {
@@ -56,6 +57,112 @@ h4 {
     font-size: 20px;
     margin: 0;
     padding: 0;
+}
+
+/*tablet size font*/
+@media screen and (max-width: 820px) {
+    p {
+        font-family: "Yeseva One", serif;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        color: white;
+        font-size: 15px;
+    }
+
+    h1 {
+        /*this is for main title*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        font-size: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        /*this is for subtitle*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        /*this is for body title*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 26px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h4 {
+        /*this is for paragraph title*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 19px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*mobile size font*/
+@media screen and (max-width: 600px) {
+    p {
+        font-family: "Yeseva One", serif;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        color: white;
+        font-size: 14px;
+    }
+
+    h1 {
+        /*this is for main title*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        font-size: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        /*this is for subtitle*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        /*this is for body title*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 21px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h4 {
+        /*this is for paragraph title*/
+        font-family: "Yeseva One", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /*navbar*/
@@ -233,6 +340,9 @@ ul li:hover ul.dropdown-long {
     display: inline-block;
 }
 
+.social-icons img {
+    width: 30px;
+}
 
 .footer-bottom {
     margin-top: 20px;
@@ -314,11 +424,13 @@ ul li:hover ul.dropdown-long {
     }
 
     .footer-section h3 {
+         min-height: 35px;
         font-size: 15px;
     }
 
     .footer-section ul {
         font-size: 13px;
+
     }
 
     .footer-bottom {
@@ -327,12 +439,13 @@ ul li:hover ul.dropdown-long {
 
     .footer-contact h3 {
         font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .footer-bottom p {
         font-size: 12px;
     }
-    
+
 }
 
 /*footer*/
@@ -381,13 +494,13 @@ ul li:hover ul.dropdown-long {
 
 }
 
-.social-icons img{
+.social-icons img {
     margin-top: 20px;
     width: 50%;
 }
 
 .social-icons a {
-    
+
     margin: 0 10px;
     display: inline-block;
 }
