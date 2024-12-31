@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../web/css/general.css">
+  <link rel="stylesheet" href="../web/css/event.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+  <title>event</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../web/images/logo.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#pianist">Pianist</a>
+                    <ul class="dropdown">
+                        <li><a href="about_hiromi.html">Hitomi</a></li>
+                        <li><a href="about_ryuchi.html">Ryuchi</a></li>
+                        <li><a href="about_animenz.html">Animez</a></li>
+                    </ul>
+                </li>
+                <li><a href="#works">Works Showcase</a>
+                    <ul class="dropdown-long">
+                        <li><a href="workshowcasehiromi.html">Hitomi</a></li>
+                        <li><a href="workshowcaseryuchi.html">Ryuchi</a></li>
+                        <li><a href="workshowcaseanimenz.html">Animenz</a></li>
+                    </ul>
+                </li>
+                <li><a href="musiclibary.html">Sheet Music Library</a>
+                  
+                </li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="hero">
+    <h1>Events</h1>
+  </div>
+
+  <div class="content">
+    <h2>HIROMI UEHARA Tour 2024</h2>
+
+    <div class="image-section">
+      <img src="../Web/images/event_hiromi.png" alt="Hiromi Uehara">
+    </div>
+
+    <button class="collapsible">November 06–07, 2024</button>
+    <button class="collapsible">November 06–07, 2024</button>
+    <div class="content">
+      <p>Shizuoka, Japan</p>
+      <p>Act City Hamamatsu Hall / Hiromi's Sonicwonder</p>
+    </div>
+  
+    <button class="collapsible">November 08, 2024</button>
+    <div class="content">
+      <p>Shizuoka, Japan</p>
+      <p>Act City Hamamatsu Hall / Hiromi's Sonicwonder</p>
+    </div>
+  
+    <button class="collapsible">December 10, 2024</button>
+    <div class="content">
+      <p>Osaka, Japan</p>
+      <p>Festival Hall / Hiromi's Sonicwonder</p>
+    </div>
+
+    <footer class="footer">
+        <footer class="footer">
+            <div class="footer-section">
+                <h3>Works Showcase</h3>
+                <ul>
+                    <li>Ryuichi Sakamoto</li>
+                    <li>Animenz's</li>
+                    <li>Hiromi</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Sheet Music Library</h3>
+                <ul>
+                    <li>Ryuichi Sakamoto</li>
+                    <li>Animenz's</li>
+                    <li>Hiromi</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Events</h3>
+                <ul>
+                    <li>Ryuichi Sakamoto</li>
+                    <li>Animenz's</li>
+                    <li>Hiromi</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/Facebook.png" alt="Facebook" width="40"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram" width="80"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter" width="40"></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
+            </div>
+        </footer>
+    </footer>
+  
+    <script>
+      const collapsibles = document.querySelectorAll('.collapsible');
+  
+      collapsibles.forEach(button => {
+        button.addEventListener('click', function () {
+          this.classList.toggle('active');
+          const content = this.nextElementSibling;
+  
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+          } else {
+            content.style.display = 'block';
+          }
+        });
+      });
+      const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('nav');
+
+        // 点击 burger-menu 时，切换菜单的显示
+        burgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('active'); // 切换 'active' 类来显示或隐藏菜单
+        });
+    </script>
+
+</body>
+
+</html>
