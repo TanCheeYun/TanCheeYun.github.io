@@ -234,6 +234,9 @@ ul li:hover ul.dropdown-long {
     display: inline-block;
 }
 
+.social-icons img {
+    width: 30px;
+}
 
 .footer-bottom {
     margin-top: 20px;
