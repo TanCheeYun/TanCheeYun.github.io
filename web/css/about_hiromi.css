@@ -59,7 +59,7 @@ body{
     line-height: 1.5;
     word-spacing: 130px;
     padding-left: 40px;
-   padding-top: 30px;
+   padding-top: 80px;
    margin: 10px;
 }
 
@@ -70,11 +70,16 @@ body{
 
 .container {
     margin: 0 auto;
+    max-width: 1200px;
+}
+
+.containerhiromi {
+    margin: 0 auto;
     padding: 5px;
     text-align: left;
     width: 80%;
-   margin-bottom: 20px;
-   margin-top: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .hightlight {
@@ -125,7 +130,7 @@ body{
 .listhiromi{
     display: flex;
     justify-content: center;
-   
+   width: 100%;
 }
 
 .listhiromi h1 {
@@ -161,17 +166,16 @@ body{
     align-items: flex-start;
     margin-bottom: 50px;
     justify-content: space-between;
-   
+    
 }
 
 .event2 p{
-    font-size: 20px;
     line-height: 1.4;
     margin: 0;
    margin-left: 20px;
     /*数字跟字的空间*/
     color: #fff;
- width: 40%;
+    width: 60%;
 }
 
 .year {
@@ -270,8 +274,7 @@ body{
     }  
     
     .listhiromi{
-       width: 100%;
-      
+      text-align: center;
     }       
 
     .listhiromi h1 {
@@ -280,7 +283,9 @@ body{
         margin-bottom: 50px;
     }
 
-   
+   .event2{
+    width: 100%;
+   }
 }
 
 
@@ -307,9 +312,9 @@ body{
         }
       
            
-     .listhiromi{
-        width: 100%;
-     }
+        .listhiromi{
+            width: 100%;
+        }
     
         .listhiromi h1 {
              /*hiromi字*/
@@ -317,11 +322,10 @@ body{
              margin-bottom: 50px;
              text-align: center;
              
-         }
+        }
 
         .event2{
-            width:65%;
-           
+            justify-content: flex-start;
         }
 }
 
