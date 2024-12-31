@@ -360,14 +360,19 @@ ul li:hover ul.dropdown-long {
 
 }
 
+.social-icons img{
+    width:50%;
+}
+
 .social-icons a {
-    margin: 0 10px;
+   
+    margin: 0 auto;
     display: inline-block;
 }
 
 
 .footer-bottom {
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(255, 255, 255);
 }
