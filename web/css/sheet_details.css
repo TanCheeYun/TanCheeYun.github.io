@@ -199,4 +199,30 @@
     .sheet_song {
         max-width: 100%;
     }
+
+    .song_play {
+        margin-top: 25px;
+    }
+
+    .backbutton {
+        margin: 40px;
+        margin-top: 120px;
+    }
+
+    .backbutton img {
+        width: 20px;
+    }
+
+    .backbutton_text {
+        font-size: 20px;
+    }
+
+    .song_imagetext {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .song_title {
+        padding: 0;
+    }
 }
