@@ -174,13 +174,13 @@ ul li:hover ul.dropdown-long {
     display: inline-block;
     width: 25%;
     vertical-align: top;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .footer-section h3 {
     font-weight: 300;
     color: #ff8200;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -202,7 +202,6 @@ ul li:hover ul.dropdown-long {
 
 .footer-contact h3 {
     font-weight: bold;
-    margin-top: 10px;
     color: white;
     font-size: 18px;
 
@@ -309,65 +308,7 @@ ul li:hover ul.dropdown-long {
     }
 
     .footer-bottom p {
-        font-size: 12px;
+        font-size: 8px;
     }
-    
-}
 
-/*footer*/
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-}
-
-.footer-section {
-    display: inline-block;
-    width: 25%;
-    vertical-align: top;
-    margin-bottom: 20px;
-}
-
-.footer-section h3 {
-    font-weight: 300;
-    color: #ff8200;
-    margin-bottom: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 10px 0px;
-    margin: 0;
-}
-
-.footer-section li {
-    margin: 30px 0;
-}
-
-.footer-contact {
-    font-weight: 300;
-    margin-top: 20px;
-}
-
-.footer-contact h3 {
-    font-weight: bold;
-    margin-top: 20px;
-    color: white;
-    font-size: 18px;
-
-}
-
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 12px;
-    color: rgb(255, 255, 255);
 }
