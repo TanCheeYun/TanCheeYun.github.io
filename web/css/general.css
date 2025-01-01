@@ -481,6 +481,17 @@ ul li:hover ul.dropdown-long {
     margin: 30px 0;
 }
 
+/* Style for links */
+.footer-section a {
+    color: white; /* Set text to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+.footer-section a:hover {
+    color: #ff8200; /* Change color on hover */
+}
+
 .footer-contact {
     font-weight: 300;
     margin-top: 20px;
