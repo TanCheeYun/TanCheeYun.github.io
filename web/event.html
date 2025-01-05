@@ -122,6 +122,40 @@
             </div>
         </div>
     </div>
+     <!-- ryuchi -->
+     <div class="section-ryuchi">
+      <div class="image-section-ryuchi">
+          <img src="../Web/images/event_ryuchi.jpg" alt="Image 2">
+      </div>
+      <div class="content-section-ryuchi">
+          <h2>RYUICHI SAKAMOTO Tour</h2>
+          <div class="date-grid-ryuchi">
+            <button class="collapsible-ryuchi">2023</button>
+            <div class="content-ryuchi">
+              <p>Online</p>
+              <p>Seeing Sound, Hearing Time</p>
+            </div>
+        
+            <button class="collapsible-ryuchi">2018</button>
+            <div class="content-ryuchi">
+              <p>New York, N.Y.</p>
+              <p>Async Tour</p>
+            </div>
+        
+            <button class="collapsible-ryuchi">2011</button>
+            <div class="content-ryuchi">
+              <p>Sendai, Japan</p>
+              <p>Post-Fukushima Charity Performances</p>
+            </div>
+        
+            <button class="collapsible-ryuchi">2005</button>
+            <div class="content-ryuchi">
+              <p>Osaka, Japan</p>
+              <p>Playing the Piano Tour</p>
+            </div>
+          </div>
+      </div>
+  </div>
 </div>
 
     <footer class="footer">
@@ -165,20 +199,51 @@
     </footer>
   
     <script>
-      const collapsibles = document.querySelectorAll('.collapsible');
-  
-      collapsibles.forEach(button => {
-        button.addEventListener('click', function () {
-          this.classList.toggle('active');
-          const content = this.nextElementSibling;
-  
-          if (content.style.display === 'block') {
-            content.style.display = 'none';
-          } else {
-            content.style.display = 'block';
-          }
-        });
-      });
+    // 处理 Hiromi 部分
+const collapsiblesHiromi = document.querySelectorAll('.collapsible');
+collapsiblesHiromi.forEach(button => {
+  button.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const content = this.nextElementSibling;
+
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  });
+});
+
+// 处理 Animenz 部分
+const collapsiblesAnimenz = document.querySelectorAll('.collapsible-animenz');
+collapsiblesAnimenz.forEach(button => {
+  button.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const content = this.nextElementSibling;
+
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  });
+});
+
+// 处理 Animenz 部分
+const collapsiblesRyuchi = document.querySelectorAll('.collapsible-ryuchi');
+collapsiblesRyuchi.forEach(button => {
+  button.addEventListener('click', function () {
+    this.classList.toggle('active');
+    const content = this.nextElementSibling;
+
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  });
+});
+
       const burgerMenu = document.getElementById('burger-menu');
         const nav = document.querySelector('nav');
 

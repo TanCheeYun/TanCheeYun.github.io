@@ -80,7 +80,7 @@ body {
 .collapsible {
     font-family: "Yeseva One", serif;
     background-color: #6A222E;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     padding: 15px;
     border-radius: 7px;
@@ -173,7 +173,7 @@ body {
 .collapsible-animenz {
     font-family: "Yeseva One", serif;
     background-color: #017EC1;
-    color: #fff;
+    color: #000000;
     cursor: pointer;
     padding: 15px;
     border-radius: 7px;
@@ -208,5 +208,98 @@ body {
 }
 
 .content-animenz p {
+    margin: 10px 0;
+}
+
+/*ryuchi*/
+.main-content-ryuchi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 50px;
+}
+
+.section-ryuchi {
+    display: flex;
+    flex-direction: row; /* 每部分内左右排列 */
+    align-items: flex-start;
+    gap: 20px; /* 图片和内容之间的间距 */
+    width: 100%; /* 确保占满父容器 */
+}
+
+
+.image-section-ryuchi {
+    flex: 1;
+    max-width: 400px;
+}
+
+.image-section-ryuchi img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-section-ryuchi {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-section-ryuchi h2 {
+    text-align: left;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #C3B26D;
+}
+
+.date-grid-ryuchi {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.collapsible-ryuchi {
+    font-family: "Yeseva One", serif;
+    background-color: #C3B26D;
+    color: #000000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-ryuchi:hover {
+    background-color: #d0c495;
+}
+
+.collapsible-ryuchi:after {
+    content: '\25BC'; /* 下箭头 */
+    font-size: 16px;
+    float: right;
+}
+
+.collapsible-ryuchi.active:after {
+    content: '\25B2'; /* 上箭头 */
+}
+
+.content-ryuchi {
+    display: none;
+    padding: 15px;
+    background-color: #000000;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.content-ryuchi p {
     margin: 10px 0;
 }
