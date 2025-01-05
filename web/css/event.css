@@ -28,16 +28,26 @@ body {
 
 .main-content {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 20px;
-    gap: 20px;
+    gap: 80px;
 }
 
+.section {
+    display: flex;
+    flex-direction: row; /* 每部分内左右排列 */
+    align-items: flex-start;
+    gap: 20px; /* 图片和内容之间的间距 */
+    width: 100%; /* 确保占满父容器 */
+}
+
+
 .image-section {
-    flex: 2;
+    flex: 1;
+    max-width: 400px;
 }
 
 .image-section img {
@@ -50,7 +60,7 @@ body {
     flex: 3;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
 }
 
 .content-section h2 {
@@ -63,7 +73,7 @@ body {
 .date-grid {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 40px;
     align-items: flex-start;
 }
 
@@ -109,3 +119,94 @@ body {
 }
 
 /*animez*/
+.main-content-animenz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 50px;
+}
+
+.section-animenz {
+    display: flex;
+    flex-direction: row; /* 每部分内左右排列 */
+    align-items: flex-start;
+    gap: 20px; /* 图片和内容之间的间距 */
+    width: 100%; /* 确保占满父容器 */
+}
+
+
+.image-section-animenz {
+    flex: 1;
+    max-width: 400px;
+}
+
+.image-section-animenz img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-section-animenz {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-section-animenz h2 {
+    text-align: left;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #017EC1;
+}
+
+.date-grid-animenz {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.collapsible-animenz {
+    font-family: "Yeseva One", serif;
+    background-color: #017EC1;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-animenz:hover {
+    background-color: #2e8bbc;
+}
+
+.collapsible-animenz:after {
+    content: '\25BC'; /* 下箭头 */
+    font-size: 16px;
+    float: right;
+}
+
+.collapsible-animenz.active:after {
+    content: '\25B2'; /* 上箭头 */
+}
+
+.content-animenz {
+    display: none;
+    padding: 15px;
+    background-color: #000000;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.content-animenz p {
+    margin: 10px 0;
+}
