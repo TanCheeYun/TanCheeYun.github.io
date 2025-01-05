@@ -424,7 +424,7 @@ p {
 
 
     .imagetom {
-        width: 70%;
+        width: 80%;
         align-items: center;
         margin: 0;
         padding: 0;
@@ -445,15 +445,15 @@ p {
     }
 
     .tom {
-        width: 100%;
-        align-items: center;
+        width: 80%;
+        padding: 50px;
         
     }
 
     /*Spiral*/
 
     .imagelaby {
-        width:70%;
+        width:80%;
         align-items: center;
         margin: 0px;
         padding: 0;
@@ -480,9 +480,9 @@ p {
     }
 
     .contant {
-        width: 100%;
-        align-items: center;
-        padding: 0px;
+        width: 80%;
+        
+        padding: 50px;
     }
 
     /*other*/
@@ -542,18 +542,17 @@ p {
         height:100vh ;
     }
 
-    .showtext {
+    .title h1 {
         font-size: 60px;
       display: flex;
-        margin-bottom: 100px;
-       padding-bottom: 30px;
+       
     }
 
-    .subtitle {
+    .title h2 {
         font-size: 30px;
         margin: 0 100px;
         align-items: center;
-
+        text-align: center;
 
     }
 
@@ -630,7 +629,7 @@ p {
     /*Spiral*/
 
     .imagelaby {
-        width:90%;
+        width:80%;
         align-items: center;
         margin: 0px;
         padding: 0;
@@ -640,7 +639,7 @@ p {
     .spiral {
         flex-direction: column;
         margin: 0;
-        padding: 60px;
+        padding: 30px;
        
     }
 
@@ -656,9 +655,14 @@ p {
         font-size: 16px;
     }
 
-    .contant {
-        width: 100%;
-        align-items: center;
+    
+   
+
+    .star,
+    .star2 {
+        justify-content: center;
     }
+
+    
 
   }
