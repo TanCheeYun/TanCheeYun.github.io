@@ -68,6 +68,7 @@ body {
 }
 
 .collapsible {
+    font-family: "Yeseva One", serif;
     background-color: #6A222E;
     color: #fff;
     cursor: pointer;
