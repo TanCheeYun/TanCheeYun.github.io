@@ -135,7 +135,7 @@
   @media (max-width: 600px) {
 
     .all{
-      margin: 0 ;
+      padding: 0px;
     }
 
     .hero-text h1 {
@@ -148,7 +148,7 @@
 
     .pianistwork img, .ryuchi img, .animenz img, .hiromi img, .ryuchi2 img, .animenz2 img, .hiromi1 img, .ryuchi3 img, .animenz3 img {
        
-        width: 100%;
+        width: 90%;
        
 
     }
