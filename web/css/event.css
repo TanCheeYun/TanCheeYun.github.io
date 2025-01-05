@@ -303,3 +303,52 @@ body {
 .content-ryuchi p {
     margin: 10px 0;
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 45px; 
+        padding: 20px;
+    }
+
+    .main-content, .main-content-animenz, .main-content-ryuchi {
+        flex-direction: column; 
+        padding: 10px;
+        gap: 50px;
+    }
+
+    .section, .section-animenz, .section-ryuchi {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .image-section, .image-section-animenz, .image-section-ryuchi {
+        max-width: 100%; 
+        text-align: center;
+    }
+
+    .image-section img, .image-section-animenz img, .image-section-ryuchi img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .content-section, .content-section-animenz, .content-section-ryuchi {
+        flex: 1;
+        gap: 20px; 
+        text-align: center; 
+    }
+
+    .content-section h2, .content-section-animenz h2, .content-section-ryuchi h2 {
+        font-size: 30px; 
+        text-align: center; 
+    }
+
+    .collapsible, .collapsible-animenz, .collapsible-ryuchi {
+        font-size: 16px; 
+        padding: 10px; 
+    }
+
+    .content, .content-animenz, .content-ryuchi {
+        font-size: 14px;
+    }
+}
