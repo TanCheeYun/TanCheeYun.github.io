@@ -102,11 +102,37 @@
 
         <div class="imagesection ">
             <div>
-             <img src="images/hiromi centre.jpg" >
+             <img src="images/hiromi centre.jpg" alt="centre_img" class="main-image" onclick="
+             openModal(this.src)">
             </div>
 
         </div>
 
+        <div class="modal" id="imgModal">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <img id="modalImage" alt="Modal Content">
+        </div>
+
+        <script>
+
+            function openModal(src) {
+                const modal = document.getElementById("imgModal");
+                const modalImage = document.getElementById("modalImage");
+                modal.style.display = "flex";
+                modalImage.src = src;
+            }
+
+            function closeModal() {
+                const modal = document.getElementById("imgModal");
+                modal.style.display = "none";
+            }
+
+            document.getElementById("imgModal").addEventListener("click", function (e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+        </script>
 
 
         <section class=" container2">
