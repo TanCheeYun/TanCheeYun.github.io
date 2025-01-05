@@ -3,7 +3,7 @@
 .all{
    margin: 0 auto;
     width:80%;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 .hero {
@@ -13,11 +13,14 @@
    display: flex;
    justify-content: flex-start;
   }
+
   
   .hero h1 {
     font-size:23px;
     color: #FF8200;
-
+    text-decoration: none;
+    text-align: center;
+     
   }
   
   .hero-text h1 {
@@ -26,6 +29,7 @@
     font-size: 30px;
     color: #FF8200;
     font-weight: 100;
+    margin-bottom: 30px;
   }
   
   /* Grid Container */
@@ -35,7 +39,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 1%;
-    row-gap: 10px;
+    row-gap: 150px;
 
   }
   
@@ -43,10 +47,16 @@
     width:30%;
   }
   
-  .pianistwork img, .ryuchi img, .animenz img, .hiromi img, .ryuchi2 img, .animenz2 img, .hiromi1 img, .ryuchi3 img, .animenz3 img {
-    width:80%;
+  .pianistwork img, .animenz img, .hiromi img, .ryuchi2 img, .animenz2 img, .hiromi1 img, .ryuchi3 img, .animenz3 img {
+    width:70%;
   }
   
+  
+  
+  .hiromi1, .ryuchi3, .animenz3 {
+    margin-bottom: 50px;
+  }
+
   .name, .name4, .name7{
     margin-top: 20px;
     font-size:18px ;
@@ -78,13 +88,7 @@
     margin-top: 5px;
   }
   
-  .categories h4 {
-    margin-top: 5px;
-    font-size: 15px;
-    color: #fff;
-    font-weight: 100;
-    margin-bottom: 100px;
-  }
+  
 
 
   /*table*/

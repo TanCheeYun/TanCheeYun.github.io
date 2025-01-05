@@ -59,7 +59,7 @@ body{
     line-height: 1.5;
     word-spacing: 130px;
     padding-left: 40px;
-   padding-top: 30px;
+   padding-top: 80px;
    margin: 10px;
 }
 
@@ -70,11 +70,17 @@ body{
 
 .container {
     margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.containerhiromi {
+    margin: 0 auto;
     padding: 5px;
     text-align: left;
     width: 80%;
-   margin-bottom: 20px;
-   margin-top: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .hightlight {
@@ -112,7 +118,7 @@ body{
     margin: 0 auto;
     padding: 5px;
     text-align: left;
-    width: 80%;
+    
     margin-bottom: 50px;
     margin-top: 20px;
 }
@@ -125,12 +131,12 @@ body{
 .listhiromi{
     display: flex;
     justify-content: center;
-   
+   width: 100%;
 }
 
 .listhiromi h1 {
     /*hiromi字*/
-    font-size: 46px;
+    font-size: 35px;
     font-family: "Yeseva One", serif;
     color: #6A222E;
     font-weight: 400;
@@ -157,11 +163,12 @@ body{
 }
 
 .event2 {
+    
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 50px;
     justify-content: space-between;
-   
+   width: 80%;
 }
 
 .event2 p{
@@ -171,7 +178,7 @@ body{
    margin-left: 20px;
     /*数字跟字的空间*/
     color: #fff;
- width: 40%;
+    width:50%;
 }
 
 .year {
@@ -215,6 +222,14 @@ body{
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
+.related-pianists a{
+    color: white; /* Set text to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+
 
 .pianist-card {
     flex: 1;
@@ -270,8 +285,7 @@ body{
     }  
     
     .listhiromi{
-       width: 100%;
-      
+      text-align: center;
     }       
 
     .listhiromi h1 {
@@ -280,7 +294,9 @@ body{
         margin-bottom: 50px;
     }
 
-   
+   .event2{
+    width: 80%;
+   }
 }
 
 
@@ -307,9 +323,9 @@ body{
         }
       
            
-     .listhiromi{
-        width: 100%;
-     }
+        .listhiromi{
+            width: 100%;
+        }
     
         .listhiromi h1 {
              /*hiromi字*/
@@ -317,11 +333,11 @@ body{
              margin-bottom: 50px;
              text-align: center;
              
-         }
+        }
 
         .event2{
-            width:65%;
-           
+            justify-content: space-between;
+            width: 80%;
         }
 }
 

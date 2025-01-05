@@ -75,7 +75,7 @@ h4 {
         font-weight: 300;
         font-style: normal;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        font-size: 60px;
+        font-size: 80px;
         margin: 0;
         padding: 0;
     }
@@ -86,7 +86,7 @@ h4 {
         font-weight: 300;
         font-style: normal;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        font-size: 35px;
+        font-size: 45px;
         margin: 0;
         padding: 0;
     }
@@ -128,7 +128,7 @@ h4 {
         font-weight: 300;
         font-style: normal;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        font-size: 50px;
+        font-size: 75px;
         margin: 0;
         padding: 0;
     }
@@ -139,7 +139,7 @@ h4 {
         font-weight: 300;
         font-style: normal;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        font-size: 25px;
+        font-size: 40px;
         margin: 0;
         padding: 0;
     }
@@ -424,7 +424,7 @@ ul li:hover ul.dropdown-long {
     }
 
     .footer-section h3 {
-         min-height: 35px;
+        min-height: 35px;
         font-size: 15px;
     }
 
@@ -481,6 +481,17 @@ ul li:hover ul.dropdown-long {
     margin: 30px 0;
 }
 
+/* Style for links */
+.footer-section a {
+    color: white; /* Set text to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+.footer-section a:hover {
+    color: #ff8200; /* Change color on hover */
+}
+
 .footer-contact {
     font-weight: 300;
     margin-top: 20px;
@@ -510,4 +521,5 @@ ul li:hover ul.dropdown-long {
     margin-top: 20px;
     font-size: 12px;
     color: rgb(255, 255, 255);
+   
 }
