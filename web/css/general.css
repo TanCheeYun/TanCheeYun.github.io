@@ -9,13 +9,6 @@ body {
 }
 
 /*font*/
-p {
-    font-family: "Yeseva One", serif;
-    letter-spacing: 1px;
-    line-height: 1.6;
-    color: white;
-    font-size: 16px;
-}
 
 h1 {
     /*this is for main title*/
