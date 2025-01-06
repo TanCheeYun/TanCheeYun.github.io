@@ -320,4 +320,8 @@ textarea.submit_section_input {
         margin-top: 15px;
     }
 
+    .submit_section_title h3 {
+        font-size: 22px;
+    }
+
 }
