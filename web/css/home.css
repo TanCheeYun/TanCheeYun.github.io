@@ -36,9 +36,9 @@ body {
     max-width: 1800px;
     margin: 0 auto;
     position: relative;
-    border-top: 1px solid #ff8200;
+    border-top: 0.2px solid #ff8200;
     /* line */
-    border-bottom: 0.5px solid #ff8200;
+    border-bottom: 0.2px solid #ff8200;
     /* line */
 }
 
