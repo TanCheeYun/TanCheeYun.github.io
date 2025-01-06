@@ -524,7 +524,7 @@ p {
 
     .star {
 
-        justify-content: flex-start;
+        margin-right: 50px;
     }
 
 
@@ -639,7 +639,7 @@ p {
     }
 
     .contant {
-        width: 90%;
+        width: 95%;
         
     }
 

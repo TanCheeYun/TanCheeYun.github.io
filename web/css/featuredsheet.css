@@ -146,6 +146,10 @@
         font-size: 20px;
     }
 
+    .container{
+      padding-left: 30px;
+    }
+
     .pianistwork img, .ryuchi img, .animenz img, .hiromi img, .ryuchi2 img, .animenz2 img, .hiromi1 img, .ryuchi3 img, .animenz3 img {
        
         width: 90%;
@@ -162,22 +166,26 @@
         margin-top: 15px;
         font-size:20px;
         text-align: center;
+        padding-right: 30px;
     }
     
     .name2, .name5, .name8{
         margin-top: 10px;
         font-size:20px;
         text-align: center;
+        padding-right: 30px;
     }
     
     .name3, .name6, .name9{
         margin-top: 10px;
         font-size:20px;
         text-align: center;
+        padding-right: 30px;
     }
       
     .star, .star2{
       text-align: center;
+      padding-right: 30px;
     }
 
     .star img, .star2 img {
