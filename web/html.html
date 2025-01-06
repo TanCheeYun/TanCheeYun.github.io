@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>123</title>
+    <style>
+        /* 表单外层容器 */
+        .submit_section {
+            width: 90%;
+            /* 响应式宽度 */
+            max-width: 800px;
+            /* 最大宽度 */
+            margin: 20px auto;
+            /* 居中 */
+            padding: 20px;
+            background-color: #000;
+            /* 黑色背景 */
+            color: #fff;
+            /* 白色文字 */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* 两列布局 */
+            gap: 20px;
+        }
+
+        /* 标题部分 */
+        .submit_section_title h3 {
+            grid-column: span 2;
+            /* 跨两列 */
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* 输入框标题 */
+        .submit_section_text_title {
+            font-size: 16px;
+            color: orange;
+            /* 橙色文字 */
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* 输入框样式 */
+        .submit_section_input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #000;
+            border: 1px solid orange;
+            /* 橙色边框 */
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .submit_section_input::placeholder {
+            color: #888;
+            /* 占位符颜色 */
+        }
+
+        /* 全宽文本区域 */
+        textarea.submit_section_input {
+            grid-column: span 2;
+            /* 跨两列 */
+            height: 100px;
+            resize: none;
+            /* 禁止调整大小 */
+        }
+
+        /* 提交按钮 */
+        .submit_section_submit {
+            grid-column: span 2;
+            /* 跨两列 */
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background-color: orange;
+            /* 橙色背景 */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .submit_section_submit:hover {
+            background-color: darkorange;
+            /* 深橙色 */
+            transform: scale(1.05);
+            /* 鼠标悬停时放大 */
+        }
+
+        /* 弹窗部分 */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            border: 1px solid orange;
+            /* 橙色边框 */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+            z-index: 1000;
+        }
+
+        .popup.hidden {
+            display: none;
+        }
+
+        .popup p {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .popup button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="submit_section">
+        <div class="submit_section_title">
+            <h3>Contact Us</h3>
+        </div>
+        <form id="contactForm">
+            <div class="submit_section_text_title">Name</div>
+            <input type="text" class="submit_section_input" placeholder="Your Name..." required />
+
+            <div class="submit_section_text_title">Email Address</div>
+            <input type="email" class="submit_section_input" placeholder="Name@gmail.com..." required />
+
+            <div class="submit_section_text_title">Subject</div>
+            <input type="text" class="submit_section_input" placeholder="Title..." required />
+
+            <div class="submit_section_text_title">Message</div>
+            <textarea class="submit_section_input" placeholder="Type Here..." required></textarea>
+
+            <button type="submit" class="submit_section_submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup hidden">
+        <p>Thank you for submitting your message!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <script>
+        // 监听表单提交
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // 阻止默认表单提交
+            document.getElementById('popup').classList.remove('hidden'); // 显示弹窗
+        });
+
+        // 关闭弹窗功能
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden'); // 隐藏弹窗
+        }
+    </script>
+</body>
+
+</html>
