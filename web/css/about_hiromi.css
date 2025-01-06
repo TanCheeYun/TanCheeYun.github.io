@@ -71,7 +71,7 @@ body{
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    width: 80%;
+   
 }
 
 .containerhiromi {
@@ -158,9 +158,9 @@ body{
     margin: 0 auto;
     padding: 5px;
     text-align: left;
-    
     margin-bottom: 50px;
     margin-top: 20px;
+    width: 80%;
 }
 
 
@@ -187,7 +187,6 @@ body{
     /*整个timeline表*/
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     max-width: 65%;
     padding: 50px;
@@ -352,6 +351,11 @@ body{
           padding: 5%;
         }
  
+        .Title-container2{
+            margin: 50px;
+            padding-top: 70px;
+        }
+
         .subtitle{
      
            text-align: center;
@@ -389,7 +393,8 @@ body{
 
     
     .title2{
-        display: none;
+        display:none;
+
     }
 
     .title {
@@ -398,7 +403,11 @@ body{
    
     }
 
-
+    .Title-container2{
+        align-items: center;
+        padding-top: 70px;
+        
+    }
 
     .Title-container2 h2 {
         font-size: 70px;
@@ -424,7 +433,9 @@ body{
     }
 
    
-
+    .textother{
+        font-size: 30px;
+    }
 
 
     .listhiromi h1{
@@ -446,8 +457,7 @@ body{
         align-items: center;
         max-width: 90%;
      font-size: 25px;
-     padding: 0px;
-     margin-left: 80px;
+        padding: 30px;
     }
 
     .year {
@@ -457,7 +467,7 @@ body{
     
 
     .event p {
-        font-size: 17px;
+        font-size: 15px;
         margin-right: 50px;
     
     }

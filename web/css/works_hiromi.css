@@ -524,7 +524,7 @@ p {
 
     .star {
 
-        margin-right: 50px;
+        justify-content: flex-start;
     }
 
 
@@ -569,7 +569,8 @@ p {
     }
 
     .album {
-        font-size: 1.3rem;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .Seeker {
@@ -607,12 +608,13 @@ p {
     }
 
     .album-tom {
-        font-size: 1.3rem;
-        
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .tomjerry {
         font-size: 25px;
+        margin-bottom: 20px;
     }
 
     .tom p {
@@ -636,6 +638,11 @@ p {
 
     }
 
+    .contant {
+        width: 90%;
+        
+    }
+
     .spiral {
         flex-direction: column;
         margin: 0;
@@ -644,19 +651,27 @@ p {
     }
 
     .album-spiral {
-        font-size: 1.3rem;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .laby {
-        font-size: 30px;
+        font-size: 25px;
+        margin-bottom: 20px;
     }
+
 
     .spiral p {
         font-size: 16px;
     }
 
-    
-   
+    .name {
+        font-size: 12px;
+    }
+
+    .name2{
+        font-size: 12px;
+    }
 
     .star,
     .star2 {

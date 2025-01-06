@@ -77,7 +77,7 @@
     color: #6A222E;
 }
 
-.star img, .star2 img {
+.star img, .star2 img, .star1 img{
     width: 5%;
     height: 18%;
     margin-top: 10px;
@@ -150,7 +150,7 @@
          width:80%;
     }
     
-    .star img, .star2 img {
+    .star img, .star2 img, .star1 img {
         width: 5%;
         height: 18%;
         margin-top: 10px;
@@ -185,9 +185,18 @@
     }
      
     .hiromi1{
-        padding-left:60px ;
+        padding-left:45px ;
     }
     
+    .name4{
+        text-align: center;
+        padding-right: 50px;
+    }
+    .star1{
+        text-align: center;
+        padding-right: 50px;
+    }
+
     .ryuchi1 img, .animenz1 img, .hiromi1 img, .ryuchi2 img, .animenz2 img, .hiromi2 img, .ryuchi3 img, .animenz3 img, .hiromi3 img {
      
          width:100%;
@@ -208,13 +217,13 @@
     }
 
     /*hiromi*/
-    .name4,.name5,.name7{
+    .name5,.name7{
         margin-top: 20px;
         font-size:20px ;
      text-align: center;
     }
 
-    .star img, .star2 img {
+    .star img, .star2 img, .star1 img {
         width: 5%;
         height: 18%;
         margin-top: 10px;
