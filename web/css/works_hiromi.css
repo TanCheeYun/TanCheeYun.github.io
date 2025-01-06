@@ -244,103 +244,84 @@ p {
 }
 
 
-/*pianistwork*/
-
-.container {
+.related-pianists {
     display: flex;
-    /* 使用 Flexbox 布局 */
     justify-content: center;
-    /* 水平方向居中 */
     align-items: flex-start;
-    /* 垂直方向对齐到顶部 */
+    gap: 40px;
     flex-wrap: wrap;
-    /* 在小屏幕上自动换行 */
-    gap: 20px;
-    /* 图片和内容之间的间距 */
-    padding: 30px;
-    max-width: 100%;
-    box-sizing: border-box;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.related-pianists a{
+    color: white; /* Set text to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Add hover effect */
 }
 
 
 
-
-.pianistwork,
-.ryuchi,
-.animenz {
-    display: flex;
-    flex-direction: column;
-    /* 让图片和文字垂直排列 */
-    align-items: center;
-    /* 垂直方向居中 */
-    width: 20%;
-    /* 设置宽度 */
-
+.pianist-card {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.pianist img,
-.merry img,
-.idol img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
-}
-
-.pianist img:hover,
-.merry img:hover {
+.pianist-card:hover {
     transform: scale(1.05);
-    /* 鼠标悬停时放大效果 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* 文字样式 */
-.name {
-    font-size: 1.2rem;
-    color: #6A222E;
-    margin: 10px 0;
+.pianist-card:hover img {
+    filter: grayscale(0%);
 }
 
-.name2 {
-    font-size: 1.2rem;
-    color: #C3B26D;
-    margin: 10px 0;
+.pianist-card img {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
 }
 
-.name3 {
-    font-size: 1.2rem;
-    color: #BAE7FF;
-    margin: 10px 0;
+.pianist-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
-
-
-
-
-/* 星级样式 */
-.star {
+.related-section-title {
     display: flex;
-    justify-content: left;
-   
-    margin-top: 5px;
-    margin-right: 140px;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
-.star img {
-    width: 20px;
-    /* 调整星星大小 */
-    margin: 0px;
-    /* 星星之间的间距 */
-}
 
-.star2 {
-    display: flex;
-    justify-content: left;
-    margin-top: 5px;
-    margin-right: 140px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -490,6 +471,7 @@ p {
     .other {
         font-size: 30px;
         margin: 10px;
+        margin-bottom:50px ;
     }
 
 
@@ -497,35 +479,7 @@ p {
 
     
 
-    .pianist img,
-    .merry img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pianistwork,
-    .ryuchi {
-        width: 40%;
-
-    }
-
-    .idol img,
-    .name3,
-    .star2 {
-
-        display: none;
-
-    }
-
-    .name {
-        font-size: 20px;
-    }
-
-    .star {
-
-        margin-right: 50px;
-    }
+   
 
 
 
@@ -623,7 +577,7 @@ p {
     }
 
     .tom {
-        width: 100%;
+        width: 90%;
         align-items: center;
         
     }
@@ -638,10 +592,7 @@ p {
 
     }
 
-    .contant {
-        width: 95%;
-        
-    }
+  
 
     .spiral {
         flex-direction: column;
@@ -665,18 +616,7 @@ p {
         font-size: 16px;
     }
 
-    .name {
-        font-size: 12px;
-    }
-
-    .name2{
-        font-size: 12px;
-    }
-
-    .star,
-    .star2 {
-        justify-content: center;
-    }
+  
 
     
 
