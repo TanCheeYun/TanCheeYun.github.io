@@ -4,6 +4,7 @@
    margin: 0 auto;
     width:80%;
     padding-left: 60px;
+    max-width:1120px;
 }
 
 .hero {
@@ -48,7 +49,7 @@
   }
   
   .pianistwork img, .animenz img, .hiromi img, .ryuchi2 img, .animenz2 img, .hiromi1 img, .ryuchi3 img, .animenz3 img {
-    width:70%;
+    width:80%;
   }
   
   
