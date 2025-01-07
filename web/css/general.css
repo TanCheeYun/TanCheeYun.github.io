@@ -9,6 +9,13 @@ body {
 }
 
 /*font*/
+p {
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #ffffff;
+}
 
 h1 {
     /*this is for main title*/
@@ -476,13 +483,17 @@ ul li:hover ul.dropdown-long {
 
 /* Style for links */
 .footer-section a {
-    color: white; /* Set text to white */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Add hover effect */
+    color: white;
+    /* Set text to white */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease;
+    /* Add hover effect */
 }
 
 .footer-section a:hover {
-    color: #ff8200; /* Change color on hover */
+    color: #ff8200;
+    /* Change color on hover */
 }
 
 .footer-contact {
@@ -514,6 +525,6 @@ ul li:hover ul.dropdown-long {
     margin-top: 20px;
     font-size: 12px;
     color: rgb(255, 255, 255);
-   justify-content: center;
-   display: flex;
+    justify-content: center;
+    display: flex;
 }
