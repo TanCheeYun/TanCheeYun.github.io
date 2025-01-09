@@ -52,8 +52,18 @@
     width:80%;
   }
   
+   .ryuchi:hover, .animenz:hover, .hiromi:hover,  .animenz2:hover, .hiromi1:hover, .ryuchi3:hover, .animenz3:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    filter: brightness(1.5);
+     transition: transform 0.3s ease, filter 0.3s ease;
+}
   
-  
+.pianistwork :hover,.ryuchi2:hover{
+  transform: scale(1.05); /* Slight zoom-in effect */
+    filter: brightness(1.1);
+     transition: transform 0.3s ease, filter 0.3s ease;
+}
+
   .hiromi1, .ryuchi3, .animenz3 {
     margin-bottom: 50px;
   }

@@ -48,10 +48,26 @@
 
  }
 
- .ryuchi1 img, .animenz1 img, .hiromi1 img, .ryuchi2 img, .animenz2 img, .hiromi2 img, .ryuchi3 img, .animenz3 img, .hiromi3 img {
+ .ryuchi1 img, .animenz1 img, .hiromi1 img, .ryuchi2 img, .animenz2 img, .ryuchi3 img, .animenz3 img, .hiromi3 img {
 
     width:80%;
   }
+
+  .hiromi2 img{
+     width: 80%;
+  }
+
+ 
+
+.ryuchi1:hover, .animenz1:hover, .hiromi1:hover, .ryuchi2:hover, .animenz2:hover, .hiromi2:hover, .ryuchi3:hover, .animenz3:hover, .hiromi3:hover {
+     transform: scale(1.05); /* Slight zoom-in effect */
+     filter: brightness(1.5);
+      transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+
+
+
 
 
   /*ryuchi*/
@@ -179,23 +195,36 @@
        text-align: center;
     }
 
-    .ryuchi1, .animenz1, .hiromi1, .ryuchi2, .animenz2, .hiromi2, .ryuchi3, .animenz3, .hiromi3 {
-
-        width:90%;
-     
+    .ryuchi1, .animenz1,  .ryuchi2, .animenz2, .ryuchi3, .animenz3, .hiromi3 
+    {
+        width:80%;
     }
      
     .hiromi1{
-        padding-left:45px ;
+        width: 75%;
     }
     
+    .hiromi1{
+        padding-left:0px ;
+    }
+    
+    .hiromi2{
+        width: 70%;
+    }
+
+
     .name4{
         text-align: center;
-        padding-right: 50px;
+        padding-right: 0px;
     }
+
+    .name5{
+        text-align: center;
+    }
+
     .star1{
         text-align: center;
-        padding-right: 50px;
+        
     }
 
     .ryuchi1 img, .animenz1 img, .hiromi1 img, .ryuchi2 img, .animenz2 img, .hiromi2 img, .ryuchi3 img, .animenz3 img, .hiromi3 img {
@@ -218,7 +247,7 @@
     }
 
     /*hiromi*/
-    .name5,.name7{
+    .name7{
         margin-top: 20px;
         font-size:20px ;
      text-align: center;
