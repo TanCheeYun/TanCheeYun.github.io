@@ -222,6 +222,7 @@ body, html {
     text-align: center;
   }
 
+
   .work-image img {
     margin-bottom: 20px
 }
@@ -234,6 +235,14 @@ body, html {
 
  .work-last{
    padding: 10px;
+  }
+
+  .work-last h2{
+    font-size: 40px;
+  }
+
+  .work-last p{
+    font-size: 20px; 
   }
 
   .work-content {
