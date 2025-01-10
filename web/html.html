@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet Image Switcher</title>
+    <style>
+        .sheet_img {
+            position: relative;
+            display: inline-block;
+        }
+
+        #sheetImage {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .left_button,
+        .right_button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.3;
+            /* 默认透明 */
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+            z-index: 10;
+            /* 显示在图片之上 */
+        }
+
+        .left_button:hover,
+        .right_button:hover {
+            opacity: 1;
+            /* 悬停时完全可见 */
+        }
+
+        .left_button {
+            left: 10px;
+            /* 按钮靠左边 */
+        }
+
+        .right_button {
+            right: 10px;
+            /* 按钮靠右边 */
+        }
+
+        .left_button img,
+        .right_button img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sheet_img">
+        <img src="images/sheet_image1.jpg" class="sheetimage" id="sheetImage" alt="Sheet Music">
+        <div class="left_button" id="leftButton">
+            <img src="images/left_button.jpg" alt="Left Button">
+        </div>
+        <div class="right_button" id="rightButton">
+            <img src="images/right_button.jpg" alt="Right Button">
+        </div>
+    </div>
+
+    <script>
+        const sheetImage = document.getElementById('sheetImage');
+        const leftButton = document.getElementById('leftButton');
+        const rightButton = document.getElementById('rightButton');
+
+        // 图片数组
+        const images = [
+            'images/sheet_image1.jpg',
+            'images/sheet_image2.jpg',
+            'images/sheet_image3.jpg'
+        ];
+        let currentIndex = 0;
+
+        // 切换到上一张图片
+        leftButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            sheetImage.src = images[currentIndex];
+        });
+
+        // 切换到下一张图片
+        rightButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            sheetImage.src = images[currentIndex];
+        });
+    </script>
+</body>
+
+</html>

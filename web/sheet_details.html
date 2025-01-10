@@ -66,6 +66,12 @@
         <div class="sheet_song">
             <div class="sheet_img">
                 <img src="images/sheet_image1.jpg" class="sheetimage" id="sheetImage" alt="Sheet Music">
+                <div class="left_button" id="leftButton">
+                    <img src="images/left_button.jpg" alt="Left Button">
+                </div>
+                <div class="right_button" id="rightButton">
+                    <img src="images/right_button.jpg" alt="Right Button">
+                </div>
             </div>
             <div class="song_play">
                 <div class="song_imagetext">
@@ -207,7 +213,35 @@
             <p>Website by © 2024 HIROMI UEHARA. ALL RIGHTS RESERVED</p>
         </div>
     </footer>
-    <script>// 获取 burger-menu 和 nav 元素
+    <script>
+        const sheetImage = document.getElementById('sheetImage');
+        const leftButton = document.getElementById('leftButton');
+        const rightButton = document.getElementById('rightButton');
+
+        // 图片数组
+        const images = [
+            'images/sheet_image1.jpg',
+            'images/sheet_image2.jpg',
+            'images/sheet_image3.jpg',
+            'images/sheet_image4.jpg',
+            'images/sheet_image5.jpg',
+            'images/sheet_image6.jpg'
+        ];
+        let currentIndex = 0;
+
+        // 切换到上一张图片
+        leftButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            sheetImage.src = images[currentIndex];
+        });
+
+        // 切换到下一张图片
+        rightButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            sheetImage.src = images[currentIndex];
+        });
+
+        // 获取 burger-menu 和 nav 元素
         const burgerMenu = document.getElementById('burger-menu');
         const nav = document.querySelector('nav');
 

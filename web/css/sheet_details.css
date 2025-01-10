@@ -232,3 +232,43 @@
         padding: 0;
     }
 }
+
+.sheet_img {
+    position: relative;
+    display: inline-block;
+}
+
+.left_button {
+    left: 3%;
+    /* 按钮靠左边 */
+}
+
+.right_button {
+    right: 3%;
+    /* 按钮靠右边 */
+}
+
+.left_button img,
+.right_button img {
+    width: 40px;
+    height: 40px;
+}
+
+.left_button,
+.right_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    /* 默认透明 */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    z-index: 10;
+    /* 显示在图片之上 */
+}
+
+.left_button:hover,
+.right_button:hover {
+    opacity: 1;
+    /* 悬停时完全可见 */
+}
